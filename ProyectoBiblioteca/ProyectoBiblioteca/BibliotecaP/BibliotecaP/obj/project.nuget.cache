@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DdCe6APGR5+fJO2P1Q4E6jsr+DlA61NAjG+ZLkLBE7K4rKLGNCZQ35Kp56fHIKyMsFzmNfIHFOZp2g+48fmeXw==",
+  "dgSpecHash": "2WPJ5rWtwNTOiP7ZuaFn61SmWosy0AfguDEWvt/28CSYVzYC8Rg5foXZdg5dmvkWTI1wXbxyqEmJpPqWr9Lp5w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jesus\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\BibliotecaP.csproj",
+  "projectFilePath": "C:\\Users\\jesus\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\BibliotecaP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jesus\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\jesus\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
