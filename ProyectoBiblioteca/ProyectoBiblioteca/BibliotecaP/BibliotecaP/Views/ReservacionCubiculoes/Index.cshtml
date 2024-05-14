@@ -1,0 +1,53 @@
+﻿@model IEnumerable<BibliotecaP.Models.dbModels.ReservacionCubiculo>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaHoraInicio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaHoraFin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cubiculo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Usuario)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaHoraInicio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaHoraFin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cubiculo.CubiculoId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Usuario.Id)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ReservacionId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ReservacionId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ReservacionId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

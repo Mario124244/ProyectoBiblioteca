@@ -26,5 +26,5 @@ public partial class Aviso
 
     [ForeignKey("UsuarioId")]
     [InverseProperty("Avisos")]
-    public virtual Usuario Usuario { get; set; } = null!;
+    public virtual AplicationUser Usuario { get; set; } = null!;
 }

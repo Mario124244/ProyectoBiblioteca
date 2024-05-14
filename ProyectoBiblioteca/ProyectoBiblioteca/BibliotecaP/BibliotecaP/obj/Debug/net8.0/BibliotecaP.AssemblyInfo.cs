@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BibliotecaP")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+33bfc67e1d6e999e5b9e4de4c5d7b7af54241794")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd6e756812738aa8519279a7ca825e608be11fb0")]
 [assembly: System.Reflection.AssemblyProductAttribute("BibliotecaP")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BibliotecaP")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -30,5 +30,5 @@ public partial class ReservacionCubiculo
 
     [ForeignKey("UsuarioId")]
     [InverseProperty("ReservacionCubiculos")]
-    public virtual Usuario Usuario { get; set; } = null!;
+    public virtual AplicationUser Usuario { get; set; } = null!;
 }

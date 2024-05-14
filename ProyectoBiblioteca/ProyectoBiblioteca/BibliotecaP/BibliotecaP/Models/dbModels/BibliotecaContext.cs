@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace BibliotecaP.Models.dbModels;
 
-public partial class BibliotecaContext : DbContext
+public partial class BibliotecaContext : IdentityDbContext<AplicationUser, IdentityRole<int>, int>
 {
     public BibliotecaContext()
     {
@@ -31,16 +33,12 @@ public partial class BibliotecaContext : DbContext
 
     public virtual DbSet<Reseña> Reseñas { get; set; }
 
-    public virtual DbSet<Role> Roles { get; set; }
 
-    public virtual DbSet<Usuario> Usuarios { get; set; }
-
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS;Database=Biblioteca;Trusted_Connection=True;TrustServerCertificate=true");
+    
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
+    { 
+        base.OnModelCreating(modelBuilder);
         modelBuilder.Entity<Aviso>(entity =>
         {
             entity.HasOne(d => d.Usuario).WithMany(p => p.Avisos)
@@ -109,19 +107,7 @@ public partial class BibliotecaContext : DbContext
                 .HasConstraintName("FK_Reseñas_Usuarios");
         });
 
-        modelBuilder.Entity<Role>(entity =>
-        {
-            entity.HasKey(e => e.RolId).HasName("PK__Roles__F92302D18D2AE485");
-        });
-
-        modelBuilder.Entity<Usuario>(entity =>
-        {
-            entity.HasKey(e => e.UsuarioId).HasName("PK__Usuarios__2B3DE798B2DDE04A");
-
-            entity.HasOne(d => d.Rol).WithMany(p => p.Usuarios)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_Usuarios_Roles");
-        });
+      
 
         OnModelCreatingPartial(modelBuilder);
     }
