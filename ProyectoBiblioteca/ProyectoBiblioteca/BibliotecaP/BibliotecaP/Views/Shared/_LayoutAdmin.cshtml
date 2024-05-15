@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Admin</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/estilosAdmin.css" asp-append-version="true" />
+   
+</head>
+<body>
+    <header class="border-bottom box-shadow">
+        <div class="imagenes1">
+            <img class="izquierda" src="~/img/Logo.8ef57795.png" alt="Alternate Text" />
+            <a class="titulo1" asp-area="" asp-controller="Home" asp-action="Index">Facultad De Ingenieria Mecanica Eliectrica</a>
+            <img class="derecha" src="~/img/admin.png" />
+        </div>
+
+    </header>
+
+    <div class="">
+        <div class="row no-gutters">
+            <div class=" col-3 border d-flex justify-content-center ">
+                <!-- Contenido de la primera columna (30% del ancho) -->
+                <div class="d-flex flex-column align-items-center h-90">
+                    <button class="mb-2  altura">Ver Pagina Como Usuario</button>
+                    <button class="mb-2  altura">Administrar Biblioteca</button>
+                    <button class="mb-2  altura">Historial General</button>
+                    <button class="mb-2  altura">Generadord de Invitacion</button>
+                    <button class="mb-2  altura">Avisos</button>
+                    <button class="mb-2  altura">Cerrar Sesion</button>
+                </div>
+            </div>
+            <div class="col-9 d-flex flex-column">
+                <!-- Contenido de la segunda columna (70% del ancho) -->
+                <nav class="navbar-expand-sm align-items-start  border-bottom border-left" style="height:40px">
+                    <div class="d-flex align-content-start">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <ul class=" navbar-nav ">
+                            <li class="nav-item">
+                                <a class="nav-link " asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " asp-area="" asp-controller="Home" asp-action="Privacy">Cuenta</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " asp-area="" asp-controller="Admin" asp-action="InicioAdmin">Reserva</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " asp-area="" asp-controller="Admin" asp-action="InicioAdmin">soporte</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+                <!-- Contenido de la tercera columna (70% del ancho, debajo de la segunda columna) -->
+                <div class="col-12">
+                    <h2></h2>
+                    <h2>  </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
