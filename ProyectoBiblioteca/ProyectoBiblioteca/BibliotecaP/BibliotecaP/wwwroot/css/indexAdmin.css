@@ -7,7 +7,9 @@ body {
     background-color: white;
 }
 
-
+.container-fluid {
+    height: 100%;
+}
 
 .imagenes1 {
     display: flex;
@@ -115,9 +117,6 @@ body {
 
     .seat.available {
         background-color: #A7F50A;
-    }
-    .seat.available2 {
-        background-color: white;
     }
 
     .seat.unavailable {

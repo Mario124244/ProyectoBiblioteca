@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pey+oWeDJqS6IV5QwzmhLumF893CaUuaA2TnrS+LUR4=",
+  "Hash": "Y2O/azoh/b9rLm15pWGBH1DvThQW4/ONERa4ETkigBI=",
   "Source": "BibliotecaP",
   "BasePath": "_content/BibliotecaP",
   "Mode": "Default",
@@ -1212,6 +1212,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\estilosAdmin.css"
+    },
+    {
+      "Identity": "C:\\Users\\jesus\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\css\\indexAdmin.css",
+      "SourceId": "BibliotecaP",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jesus\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\",
+      "BasePath": "_content/BibliotecaP",
+      "RelativePath": "css/indexAdmin.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\indexAdmin.css"
     },
     {
       "Identity": "C:\\Users\\jesus\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\css\\site.css",

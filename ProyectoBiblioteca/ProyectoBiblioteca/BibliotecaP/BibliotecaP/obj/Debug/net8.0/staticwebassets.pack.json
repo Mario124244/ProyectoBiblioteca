@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\estilosAdmin.css"
     },
     {
+      "Id": "C:\\Users\\jesus\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\css\\indexAdmin.css",
+      "PackagePath": "staticwebassets\\css\\indexAdmin.css"
+    },
+    {
       "Id": "C:\\Users\\jesus\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
