@@ -1,94 +1,4 @@
-﻿html, body {
-    height: 100%;
-}
-
-body {
-    margin: 0;
-    background-color: white;
-}
-
-.container-fluid {
-    height: 100%;
-}
-
-.imagenes1 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #E5E6E8;
-    height: 90px;
-}
-
-.titulo1 {
-    color: black;
-    text-decoration: none;
-    font-size: calc(10px + 1vw); /* Responsive font size */
-}
-
-.izquierda, .derecha {
-    width: 80px; /* Make sure images scale well */
-    height: 80px;
-}
-
-.col-3 {
-    background-color: #B1B1B1;
-    height: 100%; /* Ensure the column takes up the full height */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around; /* Distribute space around items */
-    align-items: center;
-}
-
-.altura {
-    height: 50px;
-    width: 80%;
-    border: solid #939393;
-    border-radius: 10px;
-    margin: 50px;
-}
-
-.navbar-nav .nav-item .nav-link {
-    color: #11ff00;
-}
-
-.back12 {
-    background-color: #fb0909;
-}
-
-@media (max-width: 768px) {
-    .col-3, .col-9 {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-
-    .imagenes1 {
-        flex-direction: row;
-        height: auto;
-    }
-
-    .izquierda, .derecha {
-        width: 60px;
-        height: 60px;
-    }
-
-    .altura {
-        width: 70%;
-        margin: 20px;
-    }
-}
-
-.navbar-nav {
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-@media (max-width: 768px) {
-    .navbar-nav {
-        flex-direction: column;
-    }
-}
-
-.partesuperior {
+﻿.partesuperior {
     background-color: aqua;
 }
 
@@ -119,6 +29,10 @@ body {
         background-color: #A7F50A;
     }
 
+    .seat.available2 {
+        background-color: white;
+    }
+
     .seat.unavailable {
         background-color: red;
     }
@@ -145,5 +59,31 @@ h5 {
 }
 
 .mesas.seat.available {
-    background-color: #94948e;
+    background-color: white;
+    border: solid 2px black;
+}
+
+.libros.seat.available {
+    border: solid 6px black;
+    width: 500px;
+    height: 150px;
+    background-color: white;
+}
+
+.botoninterfaz.btn {
+    background-color: gray;
+    border: solid 1px black;
+    margin: 10px;
+}
+
+    .botoninterfaz.btn i {
+        color: white;
+    }
+    button.habilitar{
+    background-color: green;
+    
+}
+
+button.desabilitar {
+    background-color: red;
 }

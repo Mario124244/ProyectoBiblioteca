@@ -1,22 +1,24 @@
 ﻿@{
     Layout = "_LayoutAdmin";
 }
-
+@section Styles {
+    <link rel="stylesheet" type="text/css" href="~/css/indexAdmin.css" />
+}
 <div class="container">
     <div class="row">
         <div class="col-2 " style="height: 100px;">
 
-            <button class="btn btn-primary rounded-circle" style="width: 50px; height: 50px;">
+            <button class="botoninterfaz btn btn-primary rounded-circle" style="width: 40px; height: 40px;">
                 <i class="fa fa-plus">1</i> <!-- Ejemplo con icono de FontAwesome -->
             </button>
-            <button class="btn btn-primary rounded-circle" style="width: 50px; height: 50px;">
-                <i class="fa fa-plus">1</i> <!-- Ejemplo con icono de FontAwesome -->
+            <button class="botoninterfaz btn d-inline-flex rounded-circle" style="width: 40px; height: 40px;">
+                <i class="fa fa-plus">2</i> <!-- Ejemplo con icono de FontAwesome -->
             </button>
 
 
         </div>
-        <div class="col-8 bg-primary" style="height: 140px;">
-            <h1>Imagen de libros</h1>
+        <div class="col-8 d-flex justify-content-center aligin-content-center" style="height: 140px;">
+            <div class="libros seat available">Libros</div>
         </div>
         <div class="col-2 " style="height: 100px;">
         </div>
@@ -175,11 +177,12 @@
     </div>
 
     <div class="row">
-        <div class="col-12 bg-secondary" style="height: 100px;">
-            <h1>2 botones, habilitar y desabilitar</h1>
+        <div class="col-12 " style="height: 100px;">
+            <button class="habilitar"><i> Habilitar<i/></button>
+            <button class="desabilitar">Desabilitar</button>
         </div>
 
     </div>
 </div>
 
-                        </div>      
+     
