@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\BibliotecaP.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\jesus\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\css\\IndexNoRegistrado.css",
+      "PackagePath": "staticwebassets\\css\\IndexNoRegistrado.css"
+    },
+    {
+      "Id": "C:\\Users\\jesus\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\css\\ReservacionUsuario.css",
+      "PackagePath": "staticwebassets\\css\\ReservacionUsuario.css"
+    },
+    {
       "Id": "C:\\Users\\jesus\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\css\\estilosAdmin.css",
       "PackagePath": "staticwebassets\\css\\estilosAdmin.css"
     },
@@ -25,8 +33,28 @@
       "PackagePath": "staticwebassets\\img\\Logo.8ef57795.png"
     },
     {
-      "Id": "C:\\Users\\jesus\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\img\\admin.png",
-      "PackagePath": "staticwebassets\\img\\admin.png"
+      "Id": "C:\\Users\\jesus\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\img\\Postman-win64-Setup.exe",
+      "PackagePath": "staticwebassets\\img\\Postman-win64-Setup.exe"
+    },
+    {
+      "Id": "C:\\Users\\jesus\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\img\\UANL-Logo.png",
+      "PackagePath": "staticwebassets\\img\\UANL-Logo.png"
+    },
+    {
+      "Id": "C:\\Users\\jesus\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\img\\admin2.png",
+      "PackagePath": "staticwebassets\\img\\admin2.png"
+    },
+    {
+      "Id": "C:\\Users\\jesus\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\img\\mapa.jpg",
+      "PackagePath": "staticwebassets\\img\\mapa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jesus\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\img\\resenas.png",
+      "PackagePath": "staticwebassets\\img\\resenas.png"
+    },
+    {
+      "Id": "C:\\Users\\jesus\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\js\\UsuarioReserva.js",
+      "PackagePath": "staticwebassets\\js\\UsuarioReserva.js"
     },
     {
       "Id": "C:\\Users\\jesus\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\js\\site.js",

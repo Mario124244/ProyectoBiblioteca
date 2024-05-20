@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Reservacion</title>
+   
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/estilosAdmin.css" asp-append-version="true" />
+    @RenderSection("Styles", required: false)
+
+   
+</head>
+<body>
+    <header class="border-bottom box-shadow">
+        <div class="imagenes1">
+            <img class="izquierda" src="~/img/Logo.8ef57795.png" alt="Alternate Text" />
+            <a class="titulo1" asp-area="" asp-controller="Home" asp-action="Index">Facultad De Ingenieria Mecanica Eliectrica</a>
+            <img class="derecha" src="~/img/admin2.png" />
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 border d-flex justify-content-center">
+
+                <div class="d-flex flex-column align-items-center h-100">
+                    <button class="mb-2 altura">Datos de Usuario</button>
+                    <button class="mb-2 altura">Informacion de Reserva</button>
+                    <button class="mb-2 altura">Ajustes de Cuenta</button>
+                    <button class="mb-2 altura">Historial de Reservas</button>
+                    <button class="mb-2 altura">Soporte</button>
+                    <button class="mb-2 altura">Cerrar Sesion</button>
+                </div>
+            </div>
+            <div class="col-9">
+
+                <nav class="navbar navbar-expand-sm border-bottom border-left">
+                    <div class="d-flex align-content-start">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Cuenta</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Admin" asp-action="InicioAdmin">Reserva</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Admin" asp-action="InicioAdmin">Soporte</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="container">
+                    <main role="main" class="pb-3">
+                        @RenderBody()
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

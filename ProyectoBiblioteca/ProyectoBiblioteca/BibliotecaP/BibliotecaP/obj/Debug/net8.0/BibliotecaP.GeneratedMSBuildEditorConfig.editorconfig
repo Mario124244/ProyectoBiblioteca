@@ -226,12 +226,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/jesus/OneDrive/Escritorio/ProyectoBiblioteca/ProyectoBiblioteca/ProyectoBiblioteca/BibliotecaP/BibliotecaP/Views/Shared/_layoutUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9sYXlvdXRVc3VhcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/jesus/OneDrive/Escritorio/ProyectoBiblioteca/ProyectoBiblioteca/ProyectoBiblioteca/BibliotecaP/BibliotecaP/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/jesus/OneDrive/Escritorio/ProyectoBiblioteca/ProyectoBiblioteca/ProyectoBiblioteca/BibliotecaP/BibliotecaP/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jesus/OneDrive/Escritorio/ProyectoBiblioteca/ProyectoBiblioteca/ProyectoBiblioteca/BibliotecaP/BibliotecaP/Views/Usuario/IndexUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xJbmRleFVzdWFyaW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/jesus/OneDrive/Escritorio/ProyectoBiblioteca/ProyectoBiblioteca/ProyectoBiblioteca/BibliotecaP/BibliotecaP/Views/_ViewImports.cshtml]

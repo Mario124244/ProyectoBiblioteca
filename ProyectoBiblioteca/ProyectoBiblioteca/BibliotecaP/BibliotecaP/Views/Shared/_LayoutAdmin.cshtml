@@ -6,21 +6,21 @@
     <title>@ViewData["Title"] - Admin</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/estilosAdmin.css" asp-append-version="true" />
-    @RenderSection("Styles", required: false) <!-- Esto renderiza la sección Styles si está definida -->
+    @RenderSection("Styles", required: false)
 </head>
 <body>
     <header class="border-bottom box-shadow">
         <div class="imagenes1">
             <img class="izquierda" src="~/img/Logo.8ef57795.png" alt="Alternate Text" />
             <a class="titulo1" asp-area="" asp-controller="Home" asp-action="Index">Facultad De Ingenieria Mecanica Eliectrica</a>
-            <img class="derecha" src="~/img/admin.png" />
+            <img class="derecha" src="~/img/admin2.png" />
         </div>
     </header>
 
     <div class="container-fluid">
         <div class="row">
             <div class="col-3 border d-flex justify-content-center">
-                <!-- Contenido de la primera columna (30% del ancho) -->
+                
                 <div class="d-flex flex-column align-items-center h-100">
                     <button class="mb-2 altura">Ver Pagina Como Usuario</button>
                     <button class="mb-2 altura">Administrar Biblioteca</button>
@@ -31,7 +31,7 @@
                 </div>
             </div>
             <div class="col-9">
-                <!-- Contenido de la segunda columna (70% del ancho) -->
+               
                 <nav class="navbar navbar-expand-sm border-bottom border-left">
                     <div class="d-flex align-content-start">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,7 +53,7 @@
                         </ul>
                     </div>
                 </nav>
-                <!-- Contenido principal -->
+               
                 <div class="container">
                     <main role="main" class="pb-3">
                         @RenderBody()
