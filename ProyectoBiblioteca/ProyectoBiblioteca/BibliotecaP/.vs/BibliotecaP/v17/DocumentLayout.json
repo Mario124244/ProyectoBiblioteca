@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\jesus\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|c:\\users\\jesus\\onedrive\\escritorio\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\bibliotecap\\bibliotecap\\wwwroot\\js\\usuarioreserva.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|solutionrelative:bibliotecap\\wwwroot\\js\\usuarioreserva.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|c:\\users\\jesus\\onedrive\\escritorio\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\bibliotecap\\bibliotecap\\controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|solutionrelative:bibliotecap\\controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|c:\\users\\jesus\\onedrive\\escritorio\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\bibliotecap\\bibliotecap\\reservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|solutionrelative:bibliotecap\\reservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|c:\\users\\jesus\\onedrive\\escritorio\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\bibliotecap\\bibliotecap\\controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|solutionrelative:bibliotecap\\controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|c:\\users\\jesus\\onedrive\\escritorio\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\bibliotecap\\bibliotecap\\wwwroot\\js\\usuarioreserva.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|solutionrelative:bibliotecap\\wwwroot\\js\\usuarioreserva.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|c:\\users\\jesus\\onedrive\\escritorio\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\bibliotecap\\bibliotecap\\controllers\\reservacioncubiculoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|solutionrelative:bibliotecap\\controllers\\reservacioncubiculoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|c:\\users\\jesus\\onedrive\\escritorio\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\bibliotecap\\bibliotecap\\views\\usuario\\indexusuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|c:\\users\\jesus\\onedrive\\escritorio\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\bibliotecap\\bibliotecap\\wwwroot\\css\\reservacionusuario.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|solutionrelative:bibliotecap\\wwwroot\\css\\reservacionusuario.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|c:\\users\\jesus\\onedrive\\escritorio\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\bibliotecap\\bibliotecap\\controllers\\reservacioncubiculoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|solutionrelative:bibliotecap\\controllers\\reservacioncubiculoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|c:\\users\\jesus\\onedrive\\escritorio\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\bibliotecap\\bibliotecap\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -118,8 +118,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -135,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ReservationsController.cs",
               "DocumentMoniker": "C:\\Users\\jesus\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\Controllers\\ReservationsController.cs",
               "RelativeDocumentMoniker": "BibliotecaP\\Controllers\\ReservationsController.cs",
@@ -156,12 +160,11 @@
               "RelativeToolTip": "BibliotecaP\\Properties\\launchSettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAADwvxcAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-18T10:39:19.642Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-18T10:39:19.642Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "ReservacionCubiculoesController.cs",
               "DocumentMoniker": "C:\\Users\\jesus\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\Controllers\\ReservacionCubiculoesController.cs",
               "RelativeDocumentMoniker": "BibliotecaP\\Controllers\\ReservacionCubiculoesController.cs",
@@ -174,7 +177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "IndexUsuario.cshtml",
               "DocumentMoniker": "C:\\Users\\jesus\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\Views\\Usuario\\IndexUsuario.cshtml",
               "RelativeDocumentMoniker": "BibliotecaP\\Views\\Usuario\\IndexUsuario.cshtml",
@@ -182,18 +185,17 @@
               "RelativeToolTip": "BibliotecaP\\Views\\Usuario\\IndexUsuario.cshtml",
               "ViewState": "AQIAADYAAAAAAAAAAAAAAEMAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-18T08:16:17.098Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-18T08:16:17.098Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "UsuarioReserva.js",
               "DocumentMoniker": "C:\\Users\\jesus\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\js\\UsuarioReserva.js",
               "RelativeDocumentMoniker": "BibliotecaP\\wwwroot\\js\\UsuarioReserva.js",
               "ToolTip": "C:\\Users\\jesus\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\js\\UsuarioReserva.js",
               "RelativeToolTip": "BibliotecaP\\wwwroot\\js\\UsuarioReserva.js",
-              "ViewState": "AQIAAGgAAAAAAAAAAAAAAHcAAAAAAAAA",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAAAG0AAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-05-18T09:18:03.676Z",
               "EditorCaption": ""
@@ -208,12 +210,11 @@
               "RelativeToolTip": "BibliotecaP\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T09:47:27.445Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-18T09:47:27.445Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ReservacionUsuario.css",
               "DocumentMoniker": "C:\\Users\\jesus\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\css\\ReservacionUsuario.css",
               "RelativeDocumentMoniker": "BibliotecaP\\wwwroot\\css\\ReservacionUsuario.css",
@@ -221,8 +222,7 @@
               "RelativeToolTip": "BibliotecaP\\wwwroot\\css\\ReservacionUsuario.css",
               "ViewState": "AQIAAFoAAAAAAAAAAADwv3QAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-18T08:30:30.036Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-18T08:30:30.036Z"
             },
             {
               "$type": "Document",
@@ -234,8 +234,7 @@
               "RelativeToolTip": "BibliotecaP\\Models\\dbModels\\BibliotecaContext.cs",
               "ViewState": "AQIAAEgAAAAAAAAAAAAAwG4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T09:37:23.216Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-18T09:37:23.216Z"
             },
             {
               "$type": "Document",
@@ -247,8 +246,7 @@
               "RelativeToolTip": "BibliotecaP\\Models\\dbModels\\ReservacionCubiculo.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T09:35:59.32Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-18T09:35:59.32Z"
             },
             {
               "$type": "Document",
@@ -260,8 +258,7 @@
               "RelativeToolTip": "BibliotecaP\\Migrations\\20240514190055_init.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T20:56:56.231Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-18T20:56:56.231Z"
             },
             {
               "$type": "Document",
@@ -273,8 +270,7 @@
               "RelativeToolTip": "BibliotecaP\\wwwroot\\css\\estilosAdmin.css",
               "ViewState": "AQIAAEIAAAAAAAAAAAAAAFYAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-18T08:40:43.12Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-18T08:40:43.12Z"
             },
             {
               "$type": "Document",
@@ -286,8 +282,7 @@
               "RelativeToolTip": "BibliotecaP\\Models\\dbModels\\EstadoCubiculo.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T09:33:48.194Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-18T09:33:48.194Z"
             },
             {
               "$type": "Document",
@@ -299,8 +294,7 @@
               "RelativeToolTip": "BibliotecaP\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-18T10:38:57.552Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-18T10:38:57.552Z"
             },
             {
               "$type": "Document",
@@ -312,8 +306,7 @@
               "RelativeToolTip": "BibliotecaP\\Models\\dbModels\\Cubiculo.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAAABsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T09:35:42.136Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-18T09:35:42.136Z"
             },
             {
               "$type": "Document",
@@ -325,8 +318,7 @@
               "RelativeToolTip": "BibliotecaP\\Views\\Admin\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-16T22:29:25.881Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-16T22:29:25.881Z"
             },
             {
               "$type": "Document",
@@ -338,8 +330,7 @@
               "RelativeToolTip": "BibliotecaP\\wwwroot\\css\\indexAdmin.css",
               "ViewState": "AQIAAD4AAAAAAAAAAAAAAAoAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-16T19:15:33.196Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-16T19:15:33.196Z"
             },
             {
               "$type": "Document",
@@ -351,8 +342,7 @@
               "RelativeToolTip": "BibliotecaP\\Views\\Shared\\_LayoutAdmin.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-14T21:39:44.649Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-14T21:39:44.649Z"
             },
             {
               "$type": "Document",
@@ -364,8 +354,7 @@
               "RelativeToolTip": "BibliotecaP\\Views\\Shared\\_layoutUsuario.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-18T08:20:24.552Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-18T08:20:24.552Z"
             },
             {
               "$type": "Document",
@@ -377,8 +366,7 @@
               "RelativeToolTip": "BibliotecaP\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-14T21:30:22.305Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-14T21:30:22.305Z"
             },
             {
               "$type": "Document",
@@ -390,8 +378,7 @@
               "RelativeToolTip": "BibliotecaP\\Controllers\\HomeController.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAAAA8AAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T01:10:02.821Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-17T01:10:02.821Z"
             },
             {
               "$type": "Document",
@@ -403,8 +390,7 @@
               "RelativeToolTip": "BibliotecaP\\Controllers\\AdminController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T08:12:55.414Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-18T08:12:55.414Z"
             },
             {
               "$type": "Document",
@@ -416,8 +402,7 @@
               "RelativeToolTip": "BibliotecaP\\Controllers\\UsuarioController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T08:15:24.071Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-18T08:15:24.071Z"
             },
             {
               "$type": "Document",
@@ -429,8 +414,7 @@
               "RelativeToolTip": "BibliotecaP\\Views\\_ViewImports.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-18T08:17:24.384Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-18T08:17:24.384Z"
             },
             {
               "$type": "Document",
