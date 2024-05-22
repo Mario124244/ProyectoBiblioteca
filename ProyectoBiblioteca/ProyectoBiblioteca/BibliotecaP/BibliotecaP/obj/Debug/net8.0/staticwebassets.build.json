@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XyTn5pePUQLW1ZW3MMzB5n+7PgOn0ZYF7gUJZEgBxiU=",
+  "Hash": "kWPdT9kVp4Zf7pp0XSMWr+bbiQAn3q+7ThGIvh+S34g=",
   "Source": "BibliotecaP",
   "BasePath": "_content/BibliotecaP",
   "Mode": "Default",
@@ -1252,6 +1252,25 @@
       "OriginalItemSpec": "wwwroot\\css\\IndexNoRegistrado.css"
     },
     {
+      "Identity": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\css\\login.css",
+      "SourceId": "BibliotecaP",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\",
+      "BasePath": "_content/BibliotecaP",
+      "RelativePath": "css/login.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\login.css"
+    },
+    {
       "Identity": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\css\\ReservacionUsuario.css",
       "SourceId": "BibliotecaP",
       "SourceType": "Discovered",
@@ -1326,6 +1345,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\admin2.png"
+    },
+    {
+      "Identity": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\img\\FACHADA.jpg",
+      "SourceId": "BibliotecaP",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\",
+      "BasePath": "_content/BibliotecaP",
+      "RelativePath": "img/FACHADA.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\FACHADA.jpg"
     },
     {
       "Identity": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\img\\Logo.8ef57795.png",

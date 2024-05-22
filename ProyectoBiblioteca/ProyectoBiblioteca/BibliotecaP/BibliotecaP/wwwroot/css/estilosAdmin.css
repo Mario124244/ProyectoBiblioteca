@@ -6,7 +6,10 @@ body {
     margin: 0;
     background-color: white;
 }
-
+.navbar1 .navbar {
+    background-color: green;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
 
 .imagenes1 {
@@ -46,7 +49,7 @@ body {
 }
 
 .navbar-nav .nav-item .nav-link {
-    color: #11ff00;
+    color: gray;
 }
 
 .back12 {

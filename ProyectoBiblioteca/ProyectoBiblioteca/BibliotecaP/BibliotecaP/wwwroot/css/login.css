@@ -1,0 +1,67 @@
+﻿html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+}
+
+.login-card {
+    background-color: rgba(76, 255, 0, 0.5); /* Verde semi-transparente */
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    width: 100%;
+    max-width: 400px; /* Limitar el tamaño máximo */
+    z-index: 1; /* Asegurar que esté por encima de la imagen de fondo */
+}
+
+.login-header {
+    margin-bottom: 1.5rem;
+}
+
+.login-form h2 {
+    margin-bottom: 1rem;
+}
+
+.login-form hr {
+    margin-bottom: 1.5rem;
+}
+
+.form-floating label {
+    padding-left: 1rem;
+}
+
+.form-floating .form-control {
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.form-check-label {
+    margin-left: 0.5rem;
+}
+
+.btn-primary {
+    background-color: #006400;
+    border-color: #006400;
+}
+
+    .btn-primary:hover {
+        background-color: #004d00;
+        border-color: #004d00;
+    }
+
+.transparent-input {
+    background-color: transparent !important;
+    border: 2px solid black !important;
+    color: black !important;
+}
+
+    .transparent-input::placeholder {
+        color: rgba(0, 0, 0, 0.5) !important; /* Color para el texto del placeholder */
+    }
+
+    .transparent-input:focus {
+        box-shadow: none !important;
+        border-color: black !important;
+    }
