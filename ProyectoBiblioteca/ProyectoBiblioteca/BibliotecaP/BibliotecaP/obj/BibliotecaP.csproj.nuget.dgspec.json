@@ -77,6 +77,22 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[8.0.2, )"
+            },
+            "QRCoder": {
+              "target": "Package",
+              "version": "[1.4.3, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "ZXing.Net": {
+              "target": "Package",
+              "version": "[0.16.9, )"
+            },
+            "iTextSharp": {
+              "target": "Package",
+              "version": "[5.5.13.3, )"
             }
           },
           "imports": [

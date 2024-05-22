@@ -1,7 +1,7 @@
 ﻿$(document).ready(function () {
     var selectedSeat = null;
-    var ultimaReserva = null; // Variable para almacenar la hora de la última reserva
-    var userId = 1; // ID del usuario, reemplazar con el valor correcto
+    var ultimaReserva = null;
+    var userId = 1; // Obtener el userId desde un campo oculto en el HTML, si es necesario
 
     function getAntiForgeryToken() {
         return $('input[name="__RequestVerificationToken"]').val();
@@ -50,9 +50,12 @@
     async function obtenerUltimaReserva() {
         try {
             const response = await fetch(`https://localhost:7230/api/reservations/user/${userId}`);
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
             const reservas = await response.json();
             if (reservas && reservas.length > 0) {
-                ultimaReserva = new Date(reservas[0].fechaHoraInicio); // Asegúrate de que esta propiedad sea correcta
+                ultimaReserva = new Date(reservas[0].fechaHoraInicio);
                 console.log("Ultima reserva obtenida:", ultimaReserva);
             }
         } catch (error) {
@@ -73,15 +76,25 @@
     $('#confirmarReserva').on('click', async function () {
         var horaEntrada = $('#horaEntrada').val();
         var horaSalida = $('#horaSalida').val();
-        var cubiculoId = $(selectedSeat).data("id"); // ID del cubículo seleccionado
+        var cubiculoId = $(selectedSeat).data("id");
 
-        await obtenerUltimaReserva(); // Obtener la última reserva antes de confirmar
+        await obtenerUltimaReserva();
 
         if (horaEntrada && horaSalida && cubiculoId) {
-            var entrada = new Date("1970-01-01T" + horaEntrada + "Z");
-            var salida = new Date("1970-01-01T" + horaSalida + "Z");
-            var diferencia = (salida - entrada) / (1000 * 60 * 60); // Diferencia en horas
-            var ahora = new Date(); // Hora actual
+            var entrada = new Date();
+            var salida = new Date();
+
+            // Aquí se combinan las fechas actuales con las horas seleccionadas
+            var [entradaHoras, entradaMinutos] = horaEntrada.split(":");
+            entrada.setHours(entradaHoras, entradaMinutos, 0, 0);
+            entrada.setMilliseconds(0);
+
+            var [salidaHoras, salidaMinutos] = horaSalida.split(":");
+            salida.setHours(salidaHoras, salidaMinutos, 0, 0);
+            salida.setMilliseconds(0);
+
+            var diferencia = (salida - entrada) / (1000 * 60 * 60);
+            var ahora = new Date();
 
             console.log("horaEntrada:", horaEntrada);
             console.log("horaSalida:", horaSalida);
@@ -89,7 +102,6 @@
             console.log("ultimaReserva antes de la reserva:", ultimaReserva);
             console.log("ahora:", ahora);
 
-            // Verificar si han pasado al menos 3 horas desde la última reserva
             if (ultimaReserva && ((ahora - ultimaReserva) < 3 * 60 * 60 * 1000)) {
                 $('#errorMessage').text('Debe esperar al menos 3 horas entre reservas.').show();
                 console.log("Debe esperar al menos 3 horas entre reservas.");
@@ -115,16 +127,17 @@
                         })
                     });
 
-                    const result = await response.text();
-
                     if (!response.ok) {
+                        const result = await response.text();
                         $('#errorMessage').text(result).show();
                     } else {
-                        ultimaReserva = new Date(); // Actualizar la hora de la última reserva
-                        console.log("Nueva ultimaReserva después de la reserva:", ultimaReserva);
+                        const result = await response.json();
+                        ultimaReserva = new Date();
                         $(selectedSeat).removeClass('available').addClass('occupied');
                         $('#reservationModal').modal('hide');
-                        alert('Reserva confirmada: ' + horaEntrada + ' a ' + horaSalida);
+
+                        const reservaId = result.reservacionId;
+                        window.location.href = `/Usuario/ReservaInfo?reservaId=${reservaId}`;
                     }
                 } catch (error) {
                     $('#errorMessage').text(`Ocurrió un error al intentar realizar la reserva: ${error.message}`).show();

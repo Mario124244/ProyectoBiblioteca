@@ -8,9 +8,7 @@ namespace BibliotecaP.Models.dbModels;
 
 public partial class BibliotecaContext : IdentityDbContext<AplicationUser, IdentityRole<int>, int>
 {
-    public BibliotecaContext()
-    {
-    }
+   
 
     public BibliotecaContext(DbContextOptions<BibliotecaContext> options)
         : base(options)
@@ -29,6 +27,7 @@ public partial class BibliotecaContext : IdentityDbContext<AplicationUser, Ident
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
+
 
         modelBuilder.Entity<Aviso>(entity =>
         {

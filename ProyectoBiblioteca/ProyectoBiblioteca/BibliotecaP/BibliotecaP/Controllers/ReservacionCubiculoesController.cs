@@ -69,15 +69,7 @@ namespace BibliotecaP.Controllers
         }
 
         // Nueva acción para mostrar la información de la reserva
-        [HttpPost]
-        public async Task<IActionResult> ReservaInfo(ReservaViewModel model)
-        {
-            // Aquí puedes generar los datos QR necesarios, por ejemplo, puedes usar información de la reserva para crear los datos QR.
-            model.QRDataAcceso = $"Acceso: {model.UsuarioNombre} - {model.CubiculoNombre} - {model.HoraEntrada}";
-            model.QRDataSalida = $"Salida: {model.UsuarioNombre} - {model.CubiculoNombre} - {model.HoraSalida}";
-
-            return View(model);
-        }
+       
 
         // GET: ReservacionCubiculoes/Edit/5
         public async Task<IActionResult> Edit(int? id)

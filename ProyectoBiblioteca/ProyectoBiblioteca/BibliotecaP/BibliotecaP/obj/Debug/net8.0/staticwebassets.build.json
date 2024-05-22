@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mV2wiBYp+BR5TV1ojCg8X6lip6JNmuX448+GdNrtrdA=",
+  "Hash": "XyTn5pePUQLW1ZW3MMzB5n+7PgOn0ZYF7gUJZEgBxiU=",
   "Source": "BibliotecaP",
   "BasePath": "_content/BibliotecaP",
   "Mode": "Default",
@@ -2523,25 +2523,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
-    },
-    {
-      "Identity": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\Services\\ReservationService.cs",
-      "SourceId": "BibliotecaP",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\",
-      "BasePath": "_content/BibliotecaP",
-      "RelativePath": "Services/ReservationService.cs",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Services\\ReservationService.cs"
     }
   ]
 }

@@ -1,0 +1,34 @@
+﻿@model BibliotecaP.Models.dbModels.ReservacionCubiculo
+
+@{
+    Layout = "_LayoutUsuario";
+    ViewData["Title"] = "Información de la Reserva";
+}
+
+<h2>Información de la Reserva</h2>
+@if (ViewBag.ReservaActiva != null)
+{
+    <p>Reserva Activa ID: @ViewBag.ReservaActiva.ReservacionId</p>
+}
+else
+{
+    <p>No tienes reservas activas.</p>
+}
+
+<div>
+    <h4>Reservación ID: @Model.ReservacionId</h4>
+    <p><strong>Cubículo ID:</strong> @Model.CubiculoId</p>
+    <p><strong>Usuario ID:</strong> @Model.UsuarioId</p>
+    <p><strong>Fecha y Hora de Inicio:</strong> @Model.FechaHoraInicio</p>
+    <p><strong>Fecha y Hora de Fin:</strong> @Model.FechaHoraFin</p>
+</div>
+
+<div>
+    <h4>Código QR de Acceso</h4>
+    <img src="data:image/png;base64,@ViewBag.AccesoQrBase64" alt="Código QR de Acceso" />
+</div>
+
+<div>
+    <h4>Código QR de Salida</h4>
+    <img src="data:image/png;base64,@ViewBag.SalidaQrBase64" alt="Código QR de Salida" />
+</div>

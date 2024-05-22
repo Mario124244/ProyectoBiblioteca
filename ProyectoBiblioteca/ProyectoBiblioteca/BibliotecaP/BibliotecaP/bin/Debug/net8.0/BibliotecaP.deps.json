@@ -14,7 +14,11 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.4",
           "Microsoft.EntityFrameworkCore.Sqlite": "8.0.4",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.4",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.2"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.2",
+          "QRCoder": "1.4.3",
+          "System.Drawing.Common": "7.0.0",
+          "ZXing.Net": "0.16.9",
+          "iTextSharp": "5.5.13.3"
         },
         "runtime": {
           "BibliotecaP.dll": {}
@@ -51,6 +55,14 @@
           "lib/netstandard2.0/Azure.Identity.dll": {
             "assemblyVersion": "1.10.3.0",
             "fileVersion": "1.1000.323.51804"
+          }
+        }
+      },
+      "BouncyCastle/1.8.9": {
+        "runtime": {
+          "lib/BouncyCastle.Crypto.dll": {
+            "assemblyVersion": "1.8.9.0",
+            "fileVersion": "1.8.20343.1"
           }
         }
       },
@@ -591,6 +603,17 @@
         "resources": {
           "lib/net6.0/zh-Hant/Humanizer.resources.dll": {
             "locale": "zh-Hant"
+          }
+        }
+      },
+      "iTextSharp/5.5.13.3": {
+        "dependencies": {
+          "BouncyCastle": "1.8.9"
+        },
+        "runtime": {
+          "lib/itextsharp.dll": {
+            "assemblyVersion": "5.5.13.3",
+            "fileVersion": "5.5.13.3"
           }
         }
       },
@@ -1733,6 +1756,14 @@
           }
         }
       },
+      "QRCoder/1.4.3": {
+        "runtime": {
+          "lib/net6.0/QRCoder.dll": {
+            "assemblyVersion": "1.4.3.0",
+            "fileVersion": "1.4.3.0"
+          }
+        }
+      },
       "SQLitePCLRaw.bundle_e_sqlite3/2.1.6": {
         "dependencies": {
           "SQLitePCLRaw.lib.e_sqlite3": "2.1.6",
@@ -2139,6 +2170,14 @@
             "fileVersion": "7.0.22.51805"
           }
         }
+      },
+      "ZXing.Net/0.16.9": {
+        "runtime": {
+          "lib/net7.0/zxing.dll": {
+            "assemblyVersion": "0.16.9.0",
+            "fileVersion": "0.16.9.0"
+          }
+        }
       }
     }
   },
@@ -2161,6 +2200,13 @@
       "sha512": "sha512-l1Xm2MWOF2Mzcwuarlw8kWQXLZk3UeB55aQXVyjj23aBfDwOZ3gu5GP2kJ6KlmZeZv2TCzw7x4L3V36iNr3gww==",
       "path": "azure.identity/1.10.3",
       "hashPath": "azure.identity.1.10.3.nupkg.sha512"
+    },
+    "BouncyCastle/1.8.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-axnBgvdD5n+FnEG6efk/tfKuMFru7R/EoISH9zjh319yb3HD24TEHSAbNN/lTRT2ulOGRxDgOsCjkuk08iwWPg==",
+      "path": "bouncycastle/1.8.9",
+      "hashPath": "bouncycastle.1.8.9.nupkg.sha512"
     },
     "Humanizer/2.14.1": {
       "type": "package",
@@ -2511,6 +2557,13 @@
       "sha512": "sha512-VIXB7HCUC34OoaGnO3HJVtSv2/wljPhjV7eKH4+TFPgQdJj2lvHNKY41Dtg0Bphu7X5UaXFR4zrYYyo+GNOjbA==",
       "path": "humanizer.core.zh-hant/2.14.1",
       "hashPath": "humanizer.core.zh-hant.2.14.1.nupkg.sha512"
+    },
+    "iTextSharp/5.5.13.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vtnMhTEJdZFCkLqaQLjD8aqTBIVKHPrSFuSXnxbLEJlvE/j/l88fvG9wtsejXTmhtErMo0lA9T2LdfdfbwplYw==",
+      "path": "itextsharp/5.5.13.3",
+      "hashPath": "itextsharp.5.5.13.3.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Cryptography.Internal/8.0.4": {
       "type": "package",
@@ -3072,6 +3125,13 @@
       "path": "nuget.versioning/6.9.1",
       "hashPath": "nuget.versioning.6.9.1.nupkg.sha512"
     },
+    "QRCoder/1.4.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fWuFqjm8GTlEb2GqBl3Hi8HZZeZQwBSHxvRPtPjyNbT82H0ff0JwavKRBmMaXCno1Av6McPC8aJzri0Mj2w9Jw==",
+      "path": "qrcoder/1.4.3",
+      "hashPath": "qrcoder.1.4.3.nupkg.sha512"
+    },
     "SQLitePCLRaw.bundle_e_sqlite3/2.1.6": {
       "type": "package",
       "serviceable": true,
@@ -3372,6 +3432,13 @@
       "sha512": "sha512-bR4qdCmssMMbo9Fatci49An5B1UaVJZHKNq70PRgzoLYIlitb8Tj7ns/Xt5Pz1CkERiTjcVBDU2y1AVrPBYkaw==",
       "path": "system.windows.extensions/7.0.0",
       "hashPath": "system.windows.extensions.7.0.0.nupkg.sha512"
+    },
+    "ZXing.Net/0.16.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7WaVMHklpT3Ye2ragqRIwlFRsb6kOk63BOGADV0fan3ulVfGLUYkDi5yNUsZS/7FVNkWbtHAlDLmu4WnHGfqvQ==",
+      "path": "zxing.net/0.16.9",
+      "hashPath": "zxing.net.0.16.9.nupkg.sha512"
     }
   }
 }

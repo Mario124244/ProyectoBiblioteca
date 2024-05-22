@@ -26,7 +26,8 @@
 
                 <div class="d-flex flex-column align-items-center h-100">
                     <button class="mb-2 altura">Datos de Usuario</button>
-                    <button class="mb-2 altura">Informacion de Reserva</button>
+                    <a class="btn btn-primary mb-2 altura" asp-controller="Usuario" asp-action="ReservaInfo" asp-route-reservaId="@ViewBag.ReservaActiva?.ReservacionId">Información de Reserva</a>
+
                     <button class="mb-2 altura">Ajustes de Cuenta</button>
                     <button class="mb-2 altura">Historial de Reservas</button>
                     <button class="mb-2 altura">Soporte</button>
@@ -48,7 +49,7 @@
                                 <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Cuenta</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Admin" asp-action="InicioAdmin">Reserva</a>
+                                <a class="nav-link" asp-area="" asp-controller="Usuario" asp-action="IndexUsuario">Reservaciones</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" asp-area="" asp-controller="Admin" asp-action="InicioAdmin">Soporte</a>

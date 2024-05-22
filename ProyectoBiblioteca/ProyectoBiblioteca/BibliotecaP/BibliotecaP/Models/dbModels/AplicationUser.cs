@@ -3,14 +3,14 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 namespace BibliotecaP.Models.dbModels
 {
-    public class AplicationUser :   IdentityUser<int>
+    public class AplicationUser : IdentityUser<int>
     {
         [Key]
         [Column("UsuarioID")]
         public int UsuarioId { get; set; }
 
         [StringLength(50)]
-        
+
 
         [Column("RolID")]
         public int RolId { get; set; }
@@ -27,7 +27,7 @@ namespace BibliotecaP.Models.dbModels
         [InverseProperty("Usuario")]
         public virtual ICollection<Reseña> Reseñas { get; set; } = new List<Reseña>();
 
-       
-        
+
+
     }
 }

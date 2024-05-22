@@ -1,12 +1,345 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|c:\\users\\mario\\onedrive\\escritorio\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\bibliotecap\\bibliotecap\\views\\usuario\\reservainfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|solutionrelative:bibliotecap\\views\\usuario\\reservainfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|c:\\users\\mario\\onedrive\\escritorio\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\bibliotecap\\bibliotecap\\wwwroot\\js\\usuarioreserva.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|solutionrelative:bibliotecap\\wwwroot\\js\\usuarioreserva.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|c:\\users\\mario\\onedrive\\escritorio\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\bibliotecap\\bibliotecap\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|solutionrelative:bibliotecap\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|c:\\users\\mario\\onedrive\\escritorio\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\bibliotecap\\bibliotecap\\models\\dbmodels\\reservacioncubiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|solutionrelative:bibliotecap\\models\\dbmodels\\reservacioncubiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|c:\\users\\mario\\onedrive\\escritorio\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\bibliotecap\\bibliotecap\\models\\dbmodels\\aplicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|solutionrelative:bibliotecap\\models\\dbmodels\\aplicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|c:\\users\\mario\\onedrive\\escritorio\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\bibliotecap\\bibliotecap\\models\\reservaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|solutionrelative:bibliotecap\\models\\reservaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|c:\\users\\mario\\onedrive\\escritorio\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\bibliotecap\\bibliotecap\\views\\shared\\_layoutusuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|solutionrelative:bibliotecap\\views\\shared\\_layoutusuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|c:\\users\\mario\\onedrive\\escritorio\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\bibliotecap\\bibliotecap\\controllers\\reservacioncubiculoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|solutionrelative:bibliotecap\\controllers\\reservacioncubiculoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|c:\\users\\mario\\onedrive\\escritorio\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\bibliotecap\\bibliotecap\\controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|solutionrelative:bibliotecap\\controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|c:\\users\\mario\\onedrive\\escritorio\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\bibliotecap\\bibliotecap\\reservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|solutionrelative:bibliotecap\\reservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|c:\\users\\mario\\onedrive\\escritorio\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\bibliotecap\\bibliotecap\\models\\dbmodels\\bibliotecacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|solutionrelative:bibliotecap\\models\\dbmodels\\bibliotecacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|c:\\users\\mario\\onedrive\\escritorio\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\bibliotecap\\bibliotecap\\models\\qrcodegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|solutionrelative:bibliotecap\\models\\qrcodegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|c:\\users\\mario\\onedrive\\escritorio\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\bibliotecap\\bibliotecap\\bibliotecap.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|solutionrelative:bibliotecap\\bibliotecap.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|c:\\users\\mario\\onedrive\\escritorio\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\bibliotecap\\bibliotecap\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|solutionrelative:bibliotecap\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|c:\\users\\mario\\onedrive\\escritorio\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\bibliotecap\\bibliotecap\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|solutionrelative:bibliotecap\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|c:\\users\\mario\\onedrive\\escritorio\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\bibliotecap\\bibliotecap\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|solutionrelative:bibliotecap\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|c:\\users\\mario\\onedrive\\escritorio\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\bibliotecap\\bibliotecap\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|solutionrelative:bibliotecap\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|c:\\users\\mario\\onedrive\\escritorio\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\bibliotecap\\bibliotecap\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|solutionrelative:bibliotecap\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|c:\\users\\mario\\onedrive\\escritorio\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\bibliotecap\\bibliotecap\\views\\usuario\\indexusuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|solutionrelative:bibliotecap\\views\\usuario\\indexusuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|c:\\users\\mario\\onedrive\\escritorio\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\proyectobiblioteca\\bibliotecap\\bibliotecap\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DB4B69C-BE3F-48F7-A3BB-A59C2E7109FC}|BibliotecaP\\BibliotecaP.csproj|solutionrelative:bibliotecap\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReservaViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\Models\\ReservaViewModel.cs",
+              "RelativeDocumentMoniker": "BibliotecaP\\Models\\ReservaViewModel.cs",
+              "ToolTip": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\Models\\ReservaViewModel.cs",
+              "RelativeToolTip": "BibliotecaP\\Models\\ReservaViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T05:27:57.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "BibliotecaP\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "BibliotecaP\\Controllers\\UsuarioController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowBMAAABmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T05:35:23.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ReservacionCubiculo.cs",
+              "DocumentMoniker": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\Models\\dbModels\\ReservacionCubiculo.cs",
+              "RelativeDocumentMoniker": "BibliotecaP\\Models\\dbModels\\ReservacionCubiculo.cs",
+              "ToolTip": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\Models\\dbModels\\ReservacionCubiculo.cs",
+              "RelativeToolTip": "BibliotecaP\\Models\\dbModels\\ReservacionCubiculo.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAkwCMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T08:56:03.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Reservainfo.cshtml",
+              "DocumentMoniker": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\Views\\Usuario\\Reservainfo.cshtml",
+              "RelativeDocumentMoniker": "BibliotecaP\\Views\\Usuario\\Reservainfo.cshtml",
+              "ToolTip": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\Views\\Usuario\\Reservainfo.cshtml",
+              "RelativeToolTip": "BibliotecaP\\Views\\Usuario\\Reservainfo.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-22T05:27:10.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ReservacionCubiculoesController.cs",
+              "DocumentMoniker": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\Controllers\\ReservacionCubiculoesController.cs",
+              "RelativeDocumentMoniker": "BibliotecaP\\Controllers\\ReservacionCubiculoesController.cs",
+              "ToolTip": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\Controllers\\ReservacionCubiculoesController.cs",
+              "RelativeToolTip": "BibliotecaP\\Controllers\\ReservacionCubiculoesController.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAEwEcAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T05:27:35.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ReservationsController.cs",
+              "DocumentMoniker": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\Controllers\\ReservationsController.cs",
+              "RelativeDocumentMoniker": "BibliotecaP\\Controllers\\ReservationsController.cs",
+              "ToolTip": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\Controllers\\ReservationsController.cs",
+              "RelativeToolTip": "BibliotecaP\\Controllers\\ReservationsController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAADwvyMAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T06:02:01.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\Models\\dbModels\\AplicationUser.cs",
+              "RelativeDocumentMoniker": "BibliotecaP\\Models\\dbModels\\AplicationUser.cs",
+              "ToolTip": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\Models\\dbModels\\AplicationUser.cs",
+              "RelativeToolTip": "BibliotecaP\\Models\\dbModels\\AplicationUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T06:06:33.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsuarioReserva.js",
+              "DocumentMoniker": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\js\\UsuarioReserva.js",
+              "RelativeDocumentMoniker": "BibliotecaP\\wwwroot\\js\\UsuarioReserva.js",
+              "ToolTip": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\js\\UsuarioReserva.js",
+              "RelativeToolTip": "BibliotecaP\\wwwroot\\js\\UsuarioReserva.js",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAYwF4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-22T05:26:36.419Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_layoutUsuario.cshtml",
+              "DocumentMoniker": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\Views\\Shared\\_layoutUsuario.cshtml",
+              "RelativeDocumentMoniker": "BibliotecaP\\Views\\Shared\\_layoutUsuario.cshtml",
+              "ToolTip": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\Views\\Shared\\_layoutUsuario.cshtml",
+              "RelativeToolTip": "BibliotecaP\\Views\\Shared\\_layoutUsuario.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACIAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-22T05:50:59.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "QrCodeGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\Models\\QrCodeGenerator.cs",
+              "RelativeDocumentMoniker": "BibliotecaP\\Models\\QrCodeGenerator.cs",
+              "ToolTip": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\Models\\QrCodeGenerator.cs",
+              "RelativeToolTip": "BibliotecaP\\Models\\QrCodeGenerator.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAiwCQAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T05:38:35.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ReservationService.cs",
+              "DocumentMoniker": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\ReservationService.cs",
+              "RelativeDocumentMoniker": "BibliotecaP\\ReservationService.cs",
+              "ToolTip": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\ReservationService.cs",
+              "RelativeToolTip": "BibliotecaP\\ReservationService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T00:11:12.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BibliotecaContext.cs",
+              "DocumentMoniker": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\Models\\dbModels\\BibliotecaContext.cs",
+              "RelativeDocumentMoniker": "BibliotecaP\\Models\\dbModels\\BibliotecaContext.cs",
+              "ToolTip": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\Models\\dbModels\\BibliotecaContext.cs",
+              "RelativeToolTip": "BibliotecaP\\Models\\dbModels\\BibliotecaContext.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAASwBoAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T09:20:45.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BibliotecaP.csproj",
+              "DocumentMoniker": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\BibliotecaP.csproj",
+              "RelativeDocumentMoniker": "BibliotecaP\\BibliotecaP.csproj",
+              "ToolTip": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\BibliotecaP.csproj",
+              "RelativeToolTip": "BibliotecaP\\BibliotecaP.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-22T09:06:43.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "BibliotecaP\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "BibliotecaP\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T06:04:29.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\Program.cs",
+              "RelativeDocumentMoniker": "BibliotecaP\\Program.cs",
+              "ToolTip": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\Program.cs",
+              "RelativeToolTip": "BibliotecaP\\Program.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T08:36:41.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\appsettings.json",
+              "RelativeDocumentMoniker": "BibliotecaP\\appsettings.json",
+              "ToolTip": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\appsettings.json",
+              "RelativeToolTip": "BibliotecaP\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-22T08:36:48.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_LayoutAdmin.cshtml",
+              "DocumentMoniker": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeDocumentMoniker": "BibliotecaP\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ToolTip": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeToolTip": "BibliotecaP\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-22T07:19:25.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "BibliotecaP\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "BibliotecaP\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACYAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-22T07:20:28.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IndexUsuario.cshtml",
+              "DocumentMoniker": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\Views\\Usuario\\IndexUsuario.cshtml",
+              "RelativeDocumentMoniker": "BibliotecaP\\Views\\Usuario\\IndexUsuario.cshtml",
+              "ToolTip": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\Views\\Usuario\\IndexUsuario.cshtml",
+              "RelativeToolTip": "BibliotecaP\\Views\\Usuario\\IndexUsuario.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-22T05:34:46.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "BibliotecaP\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "BibliotecaP\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T06:04:28.756Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

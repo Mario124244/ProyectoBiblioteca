@@ -1,4 +1,4 @@
-﻿using BibliotecaP.Models.dbModels;
+﻿﻿using BibliotecaP.Models.dbModels;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,18 +22,21 @@ namespace BibliotecaP.Services
 
         public bool HasActiveReservation(int userId)
         {
-            return _context.ReservacionCubiculos
-                .Any(r => r.UsuarioId == userId && r.FechaHoraFin >= DateTime.Now);
+            return _context.ReservacionCubiculos.Any(r => r.UsuarioId == userId && r.FechaHoraFin >= DateTime.Now);
         }
 
-        public async Task<string> CreateReservation(int userId, int cubiculoId, DateTime startDate, DateTime endDate)
+
+        public async Task<int> CreateReservation(int userId, int cubiculoId, DateTime startDate, DateTime endDate)
         {
             if (HasActiveReservation(userId))
             {
-                return "You already have an active reservation.";
+                 // Indica que ya hay una reserva activa.
             }
 
-            var newReservation = new ReservacionCubiculo
+            // Código para crear la reserva si no hay conflictos.
+        
+
+        var newReservation = new ReservacionCubiculo
             {
                 UsuarioId = userId,
                 CubiculoId = cubiculoId,
@@ -44,7 +47,7 @@ namespace BibliotecaP.Services
             _context.ReservacionCubiculos.Add(newReservation);
             await _context.SaveChangesAsync();
 
-            return "Reservation created successfully.";
+            return newReservation.ReservacionId; // Devuelve el ID de la nueva reserva
         }
 
         public async Task<List<ReservacionCubiculo>> GetReservations()
