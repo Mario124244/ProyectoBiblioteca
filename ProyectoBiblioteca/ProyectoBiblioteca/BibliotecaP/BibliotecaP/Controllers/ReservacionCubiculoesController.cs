@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BibliotecaP.Models.dbModels;
+using BibliotecaP.Models;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace BibliotecaP.Controllers
 {
@@ -54,8 +53,6 @@ namespace BibliotecaP.Controllers
         }
 
         // POST: ReservacionCubiculoes/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ReservacionId,CubiculoId,UsuarioId,FechaHoraInicio,FechaHoraFin")] ReservacionCubiculo reservacionCubiculo)
@@ -69,6 +66,17 @@ namespace BibliotecaP.Controllers
             ViewData["CubiculoId"] = new SelectList(_context.Cubiculos, "CubiculoId", "CubiculoId", reservacionCubiculo.CubiculoId);
             ViewData["UsuarioId"] = new SelectList(_context.Users, "Id", "Id", reservacionCubiculo.UsuarioId);
             return View(reservacionCubiculo);
+        }
+
+        // Nueva acción para mostrar la información de la reserva
+        [HttpPost]
+        public async Task<IActionResult> ReservaInfo(ReservaViewModel model)
+        {
+            // Aquí puedes generar los datos QR necesarios, por ejemplo, puedes usar información de la reserva para crear los datos QR.
+            model.QRDataAcceso = $"Acceso: {model.UsuarioNombre} - {model.CubiculoNombre} - {model.HoraEntrada}";
+            model.QRDataSalida = $"Salida: {model.UsuarioNombre} - {model.CubiculoNombre} - {model.HoraSalida}";
+
+            return View(model);
         }
 
         // GET: ReservacionCubiculoes/Edit/5
@@ -90,8 +98,6 @@ namespace BibliotecaP.Controllers
         }
 
         // POST: ReservacionCubiculoes/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("ReservacionId,CubiculoId,UsuarioId,FechaHoraInicio,FechaHoraFin")] ReservacionCubiculo reservacionCubiculo)

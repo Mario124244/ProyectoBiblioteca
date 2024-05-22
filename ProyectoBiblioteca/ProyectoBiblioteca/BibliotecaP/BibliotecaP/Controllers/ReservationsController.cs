@@ -1,7 +1,6 @@
 ﻿using BibliotecaP.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
- // Asegúrate de agregar el using correcto para tu servicio
 
 namespace BibliotecaP.Controllers
 {
@@ -29,7 +28,6 @@ namespace BibliotecaP.Controllers
             return Ok(result);
         }
 
-        // Nuevo endpoint para obtener el estado de los cubículos
         [HttpGet("cubiculos")]
         public async Task<IActionResult> GetCubiculos()
         {
@@ -43,6 +41,13 @@ namespace BibliotecaP.Controllers
             var reservations = await _reservationService.GetReservations();
             return Ok(reservations);
         }
+
+        [HttpGet("user/{userId}")]
+        public async Task<IActionResult> GetUserReservations(int userId)
+        {
+            var reservations = await _reservationService.GetUserReservations(userId);
+            return Ok(reservations);
+        }
     }
 
     public class ReservationRequest
@@ -52,6 +57,4 @@ namespace BibliotecaP.Controllers
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
     }
-
-
 }

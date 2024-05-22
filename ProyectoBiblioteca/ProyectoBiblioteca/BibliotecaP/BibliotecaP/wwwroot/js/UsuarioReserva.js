@@ -1,6 +1,7 @@
 ﻿$(document).ready(function () {
     var selectedSeat = null;
-    var reservas = []; // Array para guardar las reservas
+    var ultimaReserva = null; // Variable para almacenar la hora de la última reserva
+    var userId = 1; // ID del usuario, reemplazar con el valor correcto
 
     function getAntiForgeryToken() {
         return $('input[name="__RequestVerificationToken"]').val();
@@ -10,7 +11,6 @@
         $.get("https://localhost:7230/api/reservations/cubiculos", function (response) {
             var cubiculos = response;
 
-            // Verificar si la respuesta contiene la propiedad $values
             if (response.hasOwnProperty('$values')) {
                 cubiculos = response.$values;
             }
@@ -47,6 +47,19 @@
         });
     }
 
+    async function obtenerUltimaReserva() {
+        try {
+            const response = await fetch(`https://localhost:7230/api/reservations/user/${userId}`);
+            const reservas = await response.json();
+            if (reservas && reservas.length > 0) {
+                ultimaReserva = new Date(reservas[0].fechaHoraInicio); // Asegúrate de que esta propiedad sea correcta
+                console.log("Ultima reserva obtenida:", ultimaReserva);
+            }
+        } catch (error) {
+            console.error('Error al obtener el historial de reservas:', error);
+        }
+    }
+
     cargarCubiculos();
 
     $('.reservar').on('click', function () {
@@ -60,29 +73,39 @@
     $('#confirmarReserva').on('click', async function () {
         var horaEntrada = $('#horaEntrada').val();
         var horaSalida = $('#horaSalida').val();
-        var userId = 1; // ID del usuario, reemplazar con el valor correcto
         var cubiculoId = $(selectedSeat).data("id"); // ID del cubículo seleccionado
 
-        console.log("horaEntrada:", horaEntrada);
-        console.log("horaSalida:", horaSalida);
-        console.log("cubiculoId:", cubiculoId);
+        await obtenerUltimaReserva(); // Obtener la última reserva antes de confirmar
 
         if (horaEntrada && horaSalida && cubiculoId) {
             var entrada = new Date("1970-01-01T" + horaEntrada + "Z");
             var salida = new Date("1970-01-01T" + horaSalida + "Z");
             var diferencia = (salida - entrada) / (1000 * 60 * 60); // Diferencia en horas
+            var ahora = new Date(); // Hora actual
 
-            console.log("diferencia:", diferencia);
+            console.log("horaEntrada:", horaEntrada);
+            console.log("horaSalida:", horaSalida);
+            console.log("cubiculoId:", cubiculoId);
+            console.log("ultimaReserva antes de la reserva:", ultimaReserva);
+            console.log("ahora:", ahora);
+
+            // Verificar si han pasado al menos 3 horas desde la última reserva
+            if (ultimaReserva && ((ahora - ultimaReserva) < 3 * 60 * 60 * 1000)) {
+                $('#errorMessage').text('Debe esperar al menos 3 horas entre reservas.').show();
+                console.log("Debe esperar al menos 3 horas entre reservas.");
+                return;
+            }
 
             if (diferencia <= 0 || diferencia > 3) {
                 $('#errorMessage').text('La reserva no puede ser mayor a 3 horas o menor que 0 horas.').show();
+                console.log("La reserva no puede ser mayor a 3 horas o menor que 0 horas.");
             } else {
                 try {
                     const response = await fetch('https://localhost:7230/api/reservations', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
-                            'RequestVerificationToken': getAntiForgeryToken() // Incluir el token antifalsificación
+                            'RequestVerificationToken': getAntiForgeryToken()
                         },
                         body: JSON.stringify({
                             userId: userId,
@@ -93,28 +116,28 @@
                     });
 
                     const result = await response.text();
-                    console.log("result:", result);
 
                     if (!response.ok) {
                         $('#errorMessage').text(result).show();
                     } else {
-                        reservas.push({ entrada: horaEntrada, salida: horaSalida });
+                        ultimaReserva = new Date(); // Actualizar la hora de la última reserva
+                        console.log("Nueva ultimaReserva después de la reserva:", ultimaReserva);
                         $(selectedSeat).removeClass('available').addClass('occupied');
                         $('#reservationModal').modal('hide');
                         alert('Reserva confirmada: ' + horaEntrada + ' a ' + horaSalida);
                     }
                 } catch (error) {
                     $('#errorMessage').text(`Ocurrió un error al intentar realizar la reserva: ${error.message}`).show();
+                    console.log("Error al intentar realizar la reserva:", error.message);
                 }
             }
         } else {
             $('#errorMessage').text('Por favor, complete todos los campos.').show();
+            console.log("Por favor, complete todos los campos.");
         }
     });
 
-    // Función para ocultar el mensaje de error cuando se cierra el modal
     $('#reservationModal').on('hidden.bs.modal', function () {
         $('#errorMessage').hide().text('');
     });
 });
-

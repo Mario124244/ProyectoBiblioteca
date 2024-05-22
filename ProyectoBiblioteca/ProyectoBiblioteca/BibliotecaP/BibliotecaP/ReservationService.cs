@@ -1,5 +1,8 @@
 ﻿using BibliotecaP.Models.dbModels;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace BibliotecaP.Services
 {
@@ -48,6 +51,13 @@ namespace BibliotecaP.Services
         {
             return await _context.ReservacionCubiculos.Include(r => r.Cubiculo).Include(r => r.Usuario).ToListAsync();
         }
-    }
 
+        public async Task<List<ReservacionCubiculo>> GetUserReservations(int userId)
+        {
+            return await _context.ReservacionCubiculos
+                                 .Where(r => r.UsuarioId == userId)
+                                 .OrderByDescending(r => r.FechaHoraInicio)
+                                 .ToListAsync();
+        }
+    }
 }
