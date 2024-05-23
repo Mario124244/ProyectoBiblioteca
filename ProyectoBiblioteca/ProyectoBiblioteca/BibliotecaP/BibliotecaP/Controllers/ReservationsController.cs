@@ -27,7 +27,7 @@ public class ReservationsController : ControllerBase
             return BadRequest("You already have an active reservation.");
         }
 
-        return Ok(new { reservacionId = reservationId }); // Return the reservation ID
+        return Ok(new { reservacionId = reservationId });
     }
 
     [HttpGet("cubiculos")]
@@ -37,22 +37,12 @@ public class ReservationsController : ControllerBase
         return Ok(cubiculos);
     }
 
-    [HttpGet("reservations")]
-    public async Task<IActionResult> GetReservations()
-    {
-        var reservations = await _reservationService.GetReservations();
-        return Ok(reservations);
-    }
-
-    
-
     [HttpGet("user/{userId}")]
     public async Task<IActionResult> GetUserReservations(int userId)
     {
         var reservations = await _reservationService.GetUserReservations(userId);
         return Ok(reservations);
     }
-
 }
 
 public class ReservationRequest

@@ -9,39 +9,33 @@
 
     function cargarCubiculos() {
         $.get("https://localhost:7230/api/reservations/cubiculos", function (response) {
-            var cubiculos = response;
+            var cubiculos = response.$values || response;
 
-            if (response.hasOwnProperty('$values')) {
-                cubiculos = response.$values;
-            }
-
-            if (Array.isArray(cubiculos)) {
-                cubiculos.forEach(function (cubiculo) {
-                    if (cubiculo && cubiculo.cubiculoId && cubiculo.estado && cubiculo.estado.nombre) {
-                        var seat = $(`[data-id='${cubiculo.cubiculoId}']`);
-                        if (cubiculo.estado.nombre === 'Disponible') {
-                            seat.addClass('available').removeClass('occupied maintenance');
-                        } else if (cubiculo.estado.nombre === 'Ocupado') {
-                            seat.addClass('occupied').removeClass('available maintenance');
-                        } else if (cubiculo.estado.nombre === 'Mantenimiento') {
-                            seat.addClass('maintenance').removeClass('available occupied');
-                        }
-                    } else {
-                        console.warn(`Cubículo con ID ${cubiculo ? cubiculo.cubiculoId : 'undefined'} no tiene un estado válido.`);
+            cubiculos.forEach(function (cubiculo) {
+                var seat = $(`[data-id='${cubiculo.cubiculoId}']`);
+                seat.removeClass('available occupied maintenance');
+                if (cubiculo.estado && cubiculo.estado.nombre) {
+                    switch (cubiculo.estado.nombre) {
+                        case 'Disponible':
+                            seat.addClass('available');
+                            break;
+                        case 'Ocupado':
+                            seat.addClass('occupied');
+                            break;
+                        case 'Mantenimiento':
+                            seat.addClass('maintenance');
+                            break;
                     }
-                });
+                }
+            });
 
-                $('.seat.available').on('click', function () {
-                    if (selectedSeat) {
-                        $(selectedSeat).removeClass('selected');
-                    }
-                    selectedSeat = this;
-                    $(this).addClass('selected');
-                });
-            } else {
-                console.error('La respuesta de la API no es un array:', response);
-                alert('Error al cargar los cubículos');
-            }
+            $('.seat.available').on('click', function () {
+                if (selectedSeat) {
+                    $(selectedSeat).removeClass('selected');
+                }
+                selectedSeat = this;
+                $(this).addClass('selected');
+            });
         }).fail(function () {
             alert('Error al cargar los cubículos');
         });
@@ -56,7 +50,6 @@
             const reservas = await response.json();
             if (reservas && reservas.length > 0) {
                 ultimaReserva = new Date(reservas[0].fechaHoraInicio);
-                console.log("Ultima reserva obtenida:", ultimaReserva);
             }
         } catch (error) {
             console.error('Error al obtener el historial de reservas:', error);
@@ -84,7 +77,6 @@
             var entrada = new Date();
             var salida = new Date();
 
-            // Aquí se combinan las fechas actuales con las horas seleccionadas
             var [entradaHoras, entradaMinutos] = horaEntrada.split(":");
             entrada.setHours(entradaHoras, entradaMinutos, 0, 0);
             entrada.setMilliseconds(0);
@@ -96,21 +88,13 @@
             var diferencia = (salida - entrada) / (1000 * 60 * 60);
             var ahora = new Date();
 
-            console.log("horaEntrada:", horaEntrada);
-            console.log("horaSalida:", horaSalida);
-            console.log("cubiculoId:", cubiculoId);
-            console.log("ultimaReserva antes de la reserva:", ultimaReserva);
-            console.log("ahora:", ahora);
-
             if (ultimaReserva && ((ahora - ultimaReserva) < 3 * 60 * 60 * 1000)) {
                 $('#errorMessage').text('Debe esperar al menos 3 horas entre reservas.').show();
-                console.log("Debe esperar al menos 3 horas entre reservas.");
                 return;
             }
 
             if (diferencia <= 0 || diferencia > 3) {
                 $('#errorMessage').text('La reserva no puede ser mayor a 3 horas o menor que 0 horas.').show();
-                console.log("La reserva no puede ser mayor a 3 horas o menor que 0 horas.");
             } else {
                 try {
                     const response = await fetch('https://localhost:7230/api/reservations', {
@@ -136,17 +120,17 @@
                         $(selectedSeat).removeClass('available').addClass('occupied');
                         $('#reservationModal').modal('hide');
 
+                        cargarCubiculos();
+
                         const reservaId = result.reservacionId;
                         window.location.href = `/Usuario/ReservaInfo?reservaId=${reservaId}`;
                     }
                 } catch (error) {
                     $('#errorMessage').text(`Ocurrió un error al intentar realizar la reserva: ${error.message}`).show();
-                    console.log("Error al intentar realizar la reserva:", error.message);
                 }
             }
         } else {
             $('#errorMessage').text('Por favor, complete todos los campos.').show();
-            console.log("Por favor, complete todos los campos.");
         }
     });
 

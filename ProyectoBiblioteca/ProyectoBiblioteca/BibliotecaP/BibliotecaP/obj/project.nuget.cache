@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XpO7pNAngszgeq7O4luREWSShxiji/+chmMv5CuXXfeLfwesPqRvBT9CNSomDZ24NwKQ3n9nfnsx1X0VFP5hBA==",
+  "dgSpecHash": "N2nkhPuZXDU2mDshr/+Fm04vUQ355RlImpF4l3JNJXtMTeXVEVSi0oG4PeFAao2Ck7DNv4xTAeYwTsJoSWII5g==",
   "success": true,
   "projectFilePath": "C:\\Users\\mario\\OneDrive\\Escritorio\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\BibliotecaP.csproj",
   "expectedPackageFiles": [
@@ -182,6 +182,7 @@
     "C:\\Users\\mario\\.nuget\\packages\\system.threading.tasks.dataflow\\7.0.0\\system.threading.tasks.dataflow.7.0.0.nupkg.sha512",
     "C:\\Users\\mario\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\mario\\.nuget\\packages\\system.windows.extensions\\7.0.0\\system.windows.extensions.7.0.0.nupkg.sha512",
+    "C:\\Users\\mario\\.nuget\\packages\\timezoneconverter\\6.1.0\\timezoneconverter.6.1.0.nupkg.sha512",
     "C:\\Users\\mario\\.nuget\\packages\\zxing.net\\0.16.9\\zxing.net.0.16.9.nupkg.sha512"
   ],
   "logs": [

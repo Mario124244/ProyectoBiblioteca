@@ -578,3 +578,4 @@ C:\Users\mario\OneDrive\Escritorio\ProyectoBiblioteca\ProyectoBiblioteca\Proyect
 C:\Users\mario\OneDrive\Escritorio\ProyectoBiblioteca\ProyectoBiblioteca\ProyectoBiblioteca\ProyectoBiblioteca\BibliotecaP\BibliotecaP\bin\Debug\net8.0\itextsharp.dll
 C:\Users\mario\OneDrive\Escritorio\ProyectoBiblioteca\ProyectoBiblioteca\ProyectoBiblioteca\ProyectoBiblioteca\BibliotecaP\BibliotecaP\bin\Debug\net8.0\QRCoder.dll
 C:\Users\mario\OneDrive\Escritorio\ProyectoBiblioteca\ProyectoBiblioteca\ProyectoBiblioteca\ProyectoBiblioteca\BibliotecaP\BibliotecaP\bin\Debug\net8.0\zxing.dll
+C:\Users\mario\OneDrive\Escritorio\ProyectoBiblioteca\ProyectoBiblioteca\ProyectoBiblioteca\ProyectoBiblioteca\BibliotecaP\BibliotecaP\bin\Debug\net8.0\TimeZoneConverter.dll

@@ -1,0 +1,56 @@
+﻿
+
+    @{
+        Layout = "_LayoutUsuario";
+    }
+
+    @section Styles {
+        <link rel="stylesheet" type="text/css" href="~/css/HistorialReservas.css" />
+        <style>
+            .historial-container {
+                max-height: 400px; /* Ajusta la altura según sea necesario */
+                overflow-y: auto;
+                border: 1px solid #ddd; /* Opcional: agrega un borde para mejor visualización */
+                padding: 10px; /* Opcional: agrega padding */
+            }
+        </style>
+    }
+
+    <div class="container">
+        <h2>Historial de Reservas</h2>
+        <div class="historial-container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Hora de Entrada</th>
+                        <th>Hora de Salida</th>
+                        <th>Código QR de Acceso</th>
+                        <th>Código QR de Salida</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var reserva in Model)
+                    {
+                        <tr>
+                            <td>@reserva.Nombre</td>
+                            <td>@reserva.HoraEntrada</td>
+                            <td>@reserva.HoraSalida</td>
+                            <td>
+                                @if (!string.IsNullOrEmpty(reserva.AccesoQrBase64))
+                                {
+                                    <img src="@reserva.AccesoQrBase64" alt="Código QR de Acceso" />
+                                }
+                            </td>
+                            <td>
+                                @if (!string.IsNullOrEmpty(reserva.SalidaQrBase64))
+                                {
+                                    <img src="@reserva.SalidaQrBase64" alt="Código QR de Salida" />
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>

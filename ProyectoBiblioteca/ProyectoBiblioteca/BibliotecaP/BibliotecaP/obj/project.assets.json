@@ -3122,6 +3122,19 @@
           }
         }
       },
+      "TimeZoneConverter/6.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/TimeZoneConverter.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/TimeZoneConverter.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "ZXing.Net/0.16.9": {
         "type": "package",
         "compile": {
@@ -8681,6 +8694,23 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "TimeZoneConverter/6.1.0": {
+      "sha512": "UGdtyKWJqXXinyvGB9X6NVoIYbTAidoZYmn3aXzxeEYC9+OL8vF36eDt1qjb6RqBkWDl4v7iE84ecI+dFhA80A==",
+      "type": "package",
+      "path": "timezoneconverter/6.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net462/TimeZoneConverter.dll",
+        "lib/net462/TimeZoneConverter.xml",
+        "lib/net6.0/TimeZoneConverter.dll",
+        "lib/net6.0/TimeZoneConverter.xml",
+        "lib/netstandard2.0/TimeZoneConverter.dll",
+        "lib/netstandard2.0/TimeZoneConverter.xml",
+        "timezoneconverter.6.1.0.nupkg.sha512",
+        "timezoneconverter.nuspec"
+      ]
+    },
     "ZXing.Net/0.16.9": {
       "sha512": "7WaVMHklpT3Ye2ragqRIwlFRsb6kOk63BOGADV0fan3ulVfGLUYkDi5yNUsZS/7FVNkWbtHAlDLmu4WnHGfqvQ==",
       "type": "package",
@@ -8776,6 +8806,7 @@
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.2",
       "QRCoder >= 1.4.3",
       "System.Drawing.Common >= 7.0.0",
+      "TimeZoneConverter >= 6.1.0",
       "ZXing.Net >= 0.16.9",
       "iTextSharp >= 5.5.13.3"
     ]
@@ -8865,6 +8896,10 @@
           "System.Drawing.Common": {
             "target": "Package",
             "version": "[7.0.0, )"
+          },
+          "TimeZoneConverter": {
+            "target": "Package",
+            "version": "[6.1.0, )"
           },
           "ZXing.Net": {
             "target": "Package",

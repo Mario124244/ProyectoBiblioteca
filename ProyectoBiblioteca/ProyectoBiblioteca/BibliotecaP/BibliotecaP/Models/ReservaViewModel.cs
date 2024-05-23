@@ -1,12 +1,11 @@
-﻿namespace BibliotecaP.Models
+﻿namespace BibliotecaP.ViewModels
 {
-    public class ReservacionViewModel
+    public class ReservaViewModels
     {
-        public int ReservacionId { get; set; }
-        public int CubiculoId { get; set; }
-        public string UsuarioEmail { get; set; }  // Añadir esta propiedad
-        public DateTime FechaHoraInicio { get; set; }
-        public DateTime FechaHoraFin { get; set; }
+        public string Nombre { get; set; }
+        public DateTime HoraEntrada { get; set; }
+        public DateTime HoraSalida { get; set; }
+        public string AccesoQrBase64 { get; set; }
+        public string SalidaQrBase64 { get; set; }
     }
-
 }

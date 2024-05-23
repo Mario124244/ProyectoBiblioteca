@@ -26,10 +26,10 @@
 
                 <div class="d-flex flex-column align-items-center h-100">
                     <button class="mb-2 altura">Datos de Usuario</button>
-                    <a class="btn btn-primary mb-2 altura" asp-controller="Usuario" asp-action="ReservaInfo" asp-route-reservaId="@ViewBag.ReservaActiva?.ReservacionId">Información de Reserva</a>
-
+                   
                     <button class="mb-2 altura">Ajustes de Cuenta</button>
-                    <button class="mb-2 altura">Historial de Reservas</button>
+                    <a href="/Usuario/HistorialReservas" class="mb-2 altura btn btn-secondary">Historial De Reservacion</a>
+                    
                     <button class="mb-2 altura">Soporte</button>
                     <button class="mb-2 altura">Cerrar Sesion</button>
                 </div>

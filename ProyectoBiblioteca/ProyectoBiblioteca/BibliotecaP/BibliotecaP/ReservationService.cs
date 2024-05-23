@@ -15,28 +15,10 @@ namespace BibliotecaP.Services
             _context = context;
         }
 
-        public async Task<List<Cubiculo>> GetCubiculos()
-        {
-            return await _context.Cubiculos.Include(c => c.Estado).ToListAsync();
-        }
-
-        public bool HasActiveReservation(int userId)
-        {
-            return _context.ReservacionCubiculos.Any(r => r.UsuarioId == userId && r.FechaHoraFin >= DateTime.Now);
-        }
-
-
         public async Task<int> CreateReservation(int userId, int cubiculoId, DateTime startDate, DateTime endDate)
         {
-            if (HasActiveReservation(userId))
-            {
-                 // Indica que ya hay una reserva activa.
-            }
-
-            // Código para crear la reserva si no hay conflictos.
-        
-
-        var newReservation = new ReservacionCubiculo
+            // Create the reservation
+            var reservation = new ReservacionCubiculo
             {
                 UsuarioId = userId,
                 CubiculoId = cubiculoId,
@@ -44,23 +26,37 @@ namespace BibliotecaP.Services
                 FechaHoraFin = endDate
             };
 
-            _context.ReservacionCubiculos.Add(newReservation);
+            _context.ReservacionCubiculos.Add(reservation);
+
+            // Update the state of the cubiculo
+            var cubiculo = await _context.Cubiculos.FindAsync(cubiculoId);
+            if (cubiculo != null)
+            {
+                cubiculo.EstadoId = 2; // Asegúrate que el 2 corresponde a 'Ocupado'
+                _context.Cubiculos.Update(cubiculo);
+                await _context.SaveChangesAsync();  // Esto debe ejecutarse correctamente
+            }
+
             await _context.SaveChangesAsync();
 
-            return newReservation.ReservacionId; // Devuelve el ID de la nueva reserva
+            return reservation.ReservacionId;
         }
 
-        public async Task<List<ReservacionCubiculo>> GetReservations()
+        public async Task<List<Cubiculo>> GetCubiculos()
         {
-            return await _context.ReservacionCubiculos.Include(r => r.Cubiculo).Include(r => r.Usuario).ToListAsync();
+            return await _context.Cubiculos.Include(c => c.Estado).ToListAsync();
         }
 
         public async Task<List<ReservacionCubiculo>> GetUserReservations(int userId)
         {
             return await _context.ReservacionCubiculos
-                                 .Where(r => r.UsuarioId == userId)
-                                 .OrderByDescending(r => r.FechaHoraInicio)
-                                 .ToListAsync();
+                .Include(r => r.Cubiculo)
+                .Where(r => r.UsuarioId == userId)
+                .ToListAsync();
         }
     }
+
 }
+
+
+
