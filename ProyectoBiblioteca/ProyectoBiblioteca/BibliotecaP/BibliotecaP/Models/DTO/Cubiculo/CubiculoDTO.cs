@@ -19,3 +19,5 @@ namespace BibliotecaP.Models.DTO.Cubiculo
         public string EstadoNombre { get; set; } = null!;
     }
 }
+
+//Solucionado por el inge lepe
