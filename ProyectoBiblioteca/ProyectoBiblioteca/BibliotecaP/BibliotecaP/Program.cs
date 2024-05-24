@@ -1,9 +1,10 @@
 using BibliotecaP.Models.dbModels;
-using BibliotecaP.Services;  // Asegúrate de agregar el using correcto para tu servicio
-using Microsoft.AspNetCore.Antiforgery;  // Importar el espacio de nombres para IAntiforgery
+using BibliotecaP.Services;
+using Microsoft.AspNetCore.Antiforgery;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
+using Microsoft.AspNetCore.SignalR;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -42,6 +43,9 @@ builder.Services.AddControllersWithViews().AddJsonOptions(options =>
 });
 builder.Services.AddRazorPages();
 
+// Agregar SignalR
+builder.Services.AddSignalR();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -55,7 +59,7 @@ else
     app.UseHsts();
 }
 
-app.UseHttpsRedirection();  // Asegúrate de redirigir HTTP a HTTPS
+app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
@@ -74,5 +78,8 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapRazorPages();
+
+// Mapear el hub de SignalR
+app.MapHub<CubiculoHub>("/cubiculoHub");
 
 app.Run();

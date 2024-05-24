@@ -1,5 +1,7 @@
-﻿﻿using BibliotecaP.Models.dbModels;
+﻿using BibliotecaP.Models.dbModels;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -9,15 +11,16 @@ namespace BibliotecaP.Services
     public class ReservationService
     {
         private readonly BibliotecaContext _context;
+        private readonly IHubContext<CubiculoHub> _hubContext;
 
-        public ReservationService(BibliotecaContext context)
+        public ReservationService(BibliotecaContext context, IHubContext<CubiculoHub> hubContext)
         {
             _context = context;
+            _hubContext = hubContext;
         }
 
         public async Task<int> CreateReservation(int userId, int cubiculoId, DateTime startDate, DateTime endDate)
         {
-            // Create the reservation
             var reservation = new ReservacionCubiculo
             {
                 UsuarioId = userId,
@@ -28,16 +31,27 @@ namespace BibliotecaP.Services
 
             _context.ReservacionCubiculos.Add(reservation);
 
-            // Update the state of the cubiculo
             var cubiculo = await _context.Cubiculos.FindAsync(cubiculoId);
             if (cubiculo != null)
             {
                 cubiculo.EstadoId = 2; // Asegúrate que el 2 corresponde a 'Ocupado'
                 _context.Cubiculos.Update(cubiculo);
-                await _context.SaveChangesAsync();  // Esto debe ejecutarse correctamente
             }
 
             await _context.SaveChangesAsync();
+
+            // Notificar a todos los clientes sobre el cambio de estado
+            await _hubContext.Clients.All.SendAsync("CubiculoEstadoActualizado", cubiculoId, "Ocupado");
+
+            // Programar la tarea para volver a cambiar el estado del cubículo a 'Disponible'
+            var delay = endDate - DateTime.UtcNow;
+            if (delay.TotalMilliseconds > 0)
+            {
+                _ = Task.Delay(delay).ContinueWith(async _ =>
+                {
+                    await CambiarEstadoCubiculo(cubiculoId, 1); // Asumiendo que 1 es el estado 'Disponible'
+                });
+            }
 
             return reservation.ReservacionId;
         }
@@ -54,9 +68,20 @@ namespace BibliotecaP.Services
                 .Where(r => r.UsuarioId == userId)
                 .ToListAsync();
         }
+
+        private async Task CambiarEstadoCubiculo(int cubiculoId, int nuevoEstadoId)
+        {
+            var cubiculo = await _context.Cubiculos.FindAsync(cubiculoId);
+            if (cubiculo != null)
+            {
+                cubiculo.EstadoId = nuevoEstadoId;
+                _context.Cubiculos.Update(cubiculo);
+                await _context.SaveChangesAsync();
+
+                // cambio de estado
+                var estado = nuevoEstadoId == 1 ? "Disponible" : "Ocupado"; // Ajustar según los estados disponibles
+                await _hubContext.Clients.All.SendAsync("CubiculoEstadoActualizado", cubiculoId, estado);
+            }
+        }
     }
-
 }
-
-
-

@@ -3,6 +3,31 @@
     var ultimaReserva = null;
     var userId = 1; // Obtener el userId desde un campo oculto en el HTML, si es necesario
 
+    // Conectar al hub de SignalR
+    const connection = new signalR.HubConnectionBuilder()
+        .withUrl("/cubiculoHub")
+        .build();
+
+    connection.on("CubiculoEstadoActualizado", function (cubiculoId, estado) {
+        var seat = $(`[data-id='${cubiculoId}']`);
+        seat.removeClass('available occupied maintenance');
+        switch (estado) {
+            case 'Disponible':
+                seat.addClass('available');
+                break;
+            case 'Ocupado':
+                seat.addClass('occupied');
+                break;
+            case 'Mantenimiento':
+                seat.addClass('maintenance');
+                break;
+        }
+    });
+
+    connection.start().catch(function (err) {
+        return console.error(err.toString());
+    });
+
     function getAntiForgeryToken() {
         return $('input[name="__RequestVerificationToken"]').val();
     }
@@ -14,13 +39,13 @@
             cubiculos.forEach(function (cubiculo) {
                 var seat = $(`[data-id='${cubiculo.cubiculoId}']`);
                 seat.removeClass('available occupied maintenance');
-                if (cubiculo.estado && cubiculo.estado.nombre) {
-                    switch (cubiculo.estado.nombre) {
+                if (cubiculo.estadoNombre != null) {
+                    switch (cubiculo.estadoNombre) {
                         case 'Disponible':
                             seat.addClass('available');
                             break;
                         case 'Ocupado':
-                            seat.addClass('occupied');
+                            seat.addClass('unavailable');
                             break;
                         case 'Mantenimiento':
                             seat.addClass('maintenance');
@@ -119,6 +144,11 @@
                         ultimaReserva = new Date();
                         $(selectedSeat).removeClass('available').addClass('occupied');
                         $('#reservationModal').modal('hide');
+
+                        // Notificar a todos los clientes sobre el cambio de estado
+                        connection.invoke("CubiculoEstadoActualizado", cubiculoId, "Ocupado").catch(function (err) {
+                            return console.error(err.toString());
+                        });
 
                         cargarCubiculos();
 

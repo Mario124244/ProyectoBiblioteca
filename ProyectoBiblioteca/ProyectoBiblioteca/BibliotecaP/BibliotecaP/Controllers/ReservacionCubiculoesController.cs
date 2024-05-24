@@ -12,19 +12,23 @@ namespace BibliotecaP.Controllers
     {
         private readonly BibliotecaContext _context;
 
+        // Constructor: Inicializa una nueva instancia del ReservacionCubiculoesController
+        // y asigna el contexto de la base de datos a una variable privada.
         public ReservacionCubiculoesController(BibliotecaContext context)
         {
             _context = context;
         }
 
-        // GET: ReservacionCubiculoes
+        // Método Index: Recupera y muestra una lista de reservas de cubículos.
+        // Obtiene todas las reservas de cubículos junto con la información del cubículo y el usuario asociado y devolverla a la vista.
         public async Task<IActionResult> Index()
         {
             var bibliotecaContext = _context.ReservacionCubiculos.Include(r => r.Cubiculo).Include(r => r.Usuario);
             return View(await bibliotecaContext.ToListAsync());
         }
 
-        // GET: ReservacionCubiculoes/Details/5
+        // Método Details: Muestra los detalles de una reserva de cubículo específica.
+        // Obtiene una reserva de cubículo por su ID y devolverla a la vista de detalles.
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -44,7 +48,8 @@ namespace BibliotecaP.Controllers
             return View(reservacionCubiculo);
         }
 
-        // GET: ReservacionCubiculoes/Create
+        // Método Create (GET): Muestra el formulario para crear una nueva reserva de cubículo.
+        // Prepara y devuelve la vista con listas de selección para cubículos y usuarios.
         public IActionResult Create()
         {
             ViewData["CubiculoId"] = new SelectList(_context.Cubiculos, "CubiculoId", "CubiculoId");
@@ -52,7 +57,8 @@ namespace BibliotecaP.Controllers
             return View();
         }
 
-        // POST: ReservacionCubiculoes/Create
+        // Método Create (POST): Maneja la creación de una nueva reserva de cubículo.
+        // Valida y guarda una nueva reserva en la base de datos y redirigir al índice de reservas.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ReservacionId,CubiculoId,UsuarioId,FechaHoraInicio,FechaHoraFin")] ReservacionCubiculo reservacionCubiculo)
@@ -68,10 +74,8 @@ namespace BibliotecaP.Controllers
             return View(reservacionCubiculo);
         }
 
-        // Nueva acción para mostrar la información de la reserva
-       
-
-        // GET: ReservacionCubiculoes/Edit/5
+        // Método Edit (GET): Muestra el formulario para editar una reserva de cubículo existente.
+        // Prepara y devuelve la vista con los datos de la reserva a editar.
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -89,7 +93,8 @@ namespace BibliotecaP.Controllers
             return View(reservacionCubiculo);
         }
 
-        // POST: ReservacionCubiculoes/Edit/5
+        // Método Edit (POST): Maneja la actualización de una reserva de cubículo existente.
+        // Valida y guarda los cambios en la base de datos y redirigir al índice de reservas.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("ReservacionId,CubiculoId,UsuarioId,FechaHoraInicio,FechaHoraFin")] ReservacionCubiculo reservacionCubiculo)
@@ -124,7 +129,8 @@ namespace BibliotecaP.Controllers
             return View(reservacionCubiculo);
         }
 
-        // GET: ReservacionCubiculoes/Delete/5
+        // Método Delete (GET): Muestra la vista de confirmación para eliminar una reserva de cubículo.
+        // Obtiene una reserva de cubículo por su ID y devolverla a la vista de eliminación.
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -144,7 +150,8 @@ namespace BibliotecaP.Controllers
             return View(reservacionCubiculo);
         }
 
-        // POST: ReservacionCubiculoes/Delete/5
+        // Método Delete (POST): Maneja la confirmación de eliminación de una reserva de cubículo.
+        // Elimina la reserva de cubículo de la base de datos y redirige al índice de reservas.
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -159,6 +166,8 @@ namespace BibliotecaP.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        // Método ReservacionCubiculoExists: Verifica si una reserva de cubículo existe en la base de datos.
+        // Comprueba la existencia de una reserva antes de intentar actualizarla o eliminarla.
         private bool ReservacionCubiculoExists(int id)
         {
             return _context.ReservacionCubiculos.Any(e => e.ReservacionId == id);
