@@ -1,0 +1,45 @@
+﻿@model IEnumerable<BibliotecaP.Models.DTOs.ReseñaDTO>
+@{
+    ViewData["Title"] = "INICIO";
+}
+@section Styles {
+    <style>
+
+        .contact-info {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+            .contact-info img {
+                width: 80px;
+                margin-bottom: 20px;
+            }
+
+            .contact-info p {
+                margin: 10px 0;
+                font-size: 18px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+                .contact-info p i {
+                    margin-right: 10px;
+                }
+
+            .contact-info .email {
+                font-size: 16px;
+            }
+    </style>
+}
+
+
+<div class="contact-info">
+    <img src="~/img/Screenshot_5.png" alt="Headshot Icon">
+    <p><i class="fas fa-phone"></i> 8126523156</p>
+    <p><i class="fab fa-whatsapp"></i> 8126523156</p>
+    <p class="email"><i class="fas fa-envelope"></i> Jesusboli8@gmail.com</p>
+</div>>

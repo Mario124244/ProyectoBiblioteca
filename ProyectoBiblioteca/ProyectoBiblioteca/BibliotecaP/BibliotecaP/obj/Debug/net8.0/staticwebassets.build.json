@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "d91qY7PJqm5NZW1elbmblvY0EWnFBWLsPzr3w9f2AnY=",
+  "Hash": "YZe8lp+kb+h/BKd6wEqw/x+SbyEj6nDi3fW8Q3aHjTE=",
   "Source": "BibliotecaP",
   "BasePath": "_content/BibliotecaP",
   "Mode": "Default",
@@ -1421,6 +1421,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\resenas.png"
+    },
+    {
+      "Identity": "C:\\Users\\mario\\OneDrive\\Escritorio\\proyectorepo\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\img\\Screenshot_5.png",
+      "SourceId": "BibliotecaP",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\mario\\OneDrive\\Escritorio\\proyectorepo\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\",
+      "BasePath": "_content/BibliotecaP",
+      "RelativePath": "img/Screenshot_5.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Screenshot_5.png"
     },
     {
       "Identity": "C:\\Users\\mario\\OneDrive\\Escritorio\\proyectorepo\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\img\\UANL-Logo.png",
