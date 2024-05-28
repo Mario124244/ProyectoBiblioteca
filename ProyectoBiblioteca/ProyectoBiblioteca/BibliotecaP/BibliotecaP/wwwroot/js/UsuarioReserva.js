@@ -3,8 +3,6 @@
     var ultimaReserva = null;
     var userId = 1; // Obtener el userId desde un campo oculto en el HTML, si es necesario
 
-    
-
     // Conectar al hub de SignalR
     const connection = new signalR.HubConnectionBuilder()
         .withUrl("/cubiculoHub")
@@ -127,6 +125,7 @@
             const reservas = await response.json();
             if (reservas && reservas.length > 0) {
                 ultimaReserva = new Date(reservas[0].fechaHoraInicio);
+                console.log('Última reserva obtenida:', ultimaReserva); // Verificar el valor de ultimaReserva
             }
         } catch (error) {
             console.error('Error al obtener el historial de reservas:', error);
@@ -136,15 +135,13 @@
     cargarCubiculos();
     cargarMesas();
 
-    $('.reservar').on('click', function () {   
+    $('.reservar').on('click', function () {
         if (selectedSeat) {
             $('#reservationModal').modal('show');
         } else {
             alert('Por favor, seleccione un cubículo primero.');
         }
     });
-
-   
 
     $('#confirmarReserva').on('click', async function () {
         var horaEntrada = $('#horaEntrada').val();
@@ -167,6 +164,13 @@
 
             var diferencia = (salida - entrada) / (1000 * 60 * 60);
             var ahora = new Date();
+
+            console.log('Hora actual:', ahora); // Verificar la hora actual
+            console.log('Diferencia en horas:', diferencia); // Verificar la diferencia en horas
+            if (ultimaReserva) {
+                console.log('Diferencia desde la última reserva en milisegundos:', ahora - ultimaReserva);
+                console.log('Esperado mínimo (3 horas en milisegundos):', 3 * 60 * 60 * 1000);
+            }
 
             if (ultimaReserva && ((ahora - ultimaReserva) < 3 * 60 * 60 * 1000)) {
                 $('#errorMessage').text('Debe esperar al menos 3 horas entre reservas.').show();
@@ -241,6 +245,13 @@
 
             var diferencia = (salida - entrada) / (1000 * 60 * 60);
             var ahora = new Date();
+
+            console.log('Hora actual:', ahora); // Verificar la hora actual
+            console.log('Diferencia en horas:', diferencia); // Verificar la diferencia en horas
+            if (ultimaReserva) {
+                console.log('Diferencia desde la última reserva en milisegundos:', ahora - ultimaReserva);
+                console.log('Esperado mínimo (3 horas en milisegundos):', 3 * 60 * 60 * 1000);
+            }
 
             if (ultimaReserva && ((ahora - ultimaReserva) < 3 * 60 * 60 * 1000)) {
                 $('#errorMessage').text('Debe esperar al menos 3 horas entre reservas.').show();

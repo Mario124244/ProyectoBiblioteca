@@ -4,6 +4,7 @@ using BibliotecaP.Services;
 using iTextSharp.text.pdf.codec.wmf;
 using Microsoft.AspNetCore.Mvc;
 
+
 [ApiController]
 [Route("api/[controller]")]
 public class ReservationsController : ControllerBase
@@ -13,6 +14,17 @@ public class ReservationsController : ControllerBase
     public ReservationsController(ReservationService reservationService)
     {
         _reservationService = reservationService;
+    }
+
+    [HttpGet("user/{userId}")]
+    public async Task<IActionResult> GetUserReservations(int userId)
+    {
+        var reservations = await _reservationService.GetUserReservations(userId);
+        if (reservations == null || !reservations.Any())
+        {
+            return NotFound();
+        }
+        return Ok(reservations);
     }
 
     [HttpPost("cubiculo")]

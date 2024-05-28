@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 using BibliotecaP.Models.dbModels;
+using BibliotecaP.Models;
 
 namespace BibliotecaP.Services
 {
@@ -18,6 +19,14 @@ namespace BibliotecaP.Services
             _context = context;
             _hubContext = hubContext;
         }
+        public async Task<IEnumerable<ReservacionCubiculo>> GetUserReservations(int userId)
+        {
+            return await _context.ReservacionCubiculos
+                .Where(r => r.UsuarioId == userId)
+                .OrderByDescending(r => r.FechaHoraInicio)
+                .ToListAsync();
+        }
+
 
         public async Task<int> CreateCubiculoReservation(int userId, int cubiculoId, DateTime startDate, DateTime endDate)
         {
