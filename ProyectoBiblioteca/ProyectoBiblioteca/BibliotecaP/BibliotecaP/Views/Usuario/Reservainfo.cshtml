@@ -3,6 +3,9 @@
 @{
     Layout = "_LayoutUsuario";
     ViewData["Title"] = "Información de la Reserva";
+    TimeZoneInfo mexicoTimeZone = TimeZoneInfo.FindSystemTimeZoneById("Central Standard Time (Mexico)");
+    DateTime mexicoFechaHoraInicio = TimeZoneInfo.ConvertTimeFromUtc(Model.FechaHoraInicio, mexicoTimeZone);
+    DateTime mexicoFechaHoraFin = TimeZoneInfo.ConvertTimeFromUtc(Model.FechaHoraFin, mexicoTimeZone);
 }
 
 <h2>Información de la Reserva</h2>
@@ -11,8 +14,8 @@
     <h4>Reservación ID: @Model.ReservacionId</h4>
     <p><strong>Cubículo ID:</strong> @Model.CubiculoId</p>
     <p><strong>Usuario ID:</strong> @Model.UsuarioId</p>
-    <p><strong>Fecha y Hora de Inicio:</strong> @ViewBag.HoraInicio</p>
-    <p><strong>Fecha y Hora de Fin:</strong> @ViewBag.HoraFin</p>
+    <p><strong>Fecha y Hora de Inicio:</strong> @mexicoFechaHoraInicio</p>
+    <p><strong>Fecha y Hora de Fin:</strong> @mexicoFechaHoraFin</p>
 </div>
 
 <div>

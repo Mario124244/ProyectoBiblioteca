@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jesus\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\BibliotecaP.csproj": {}
+    "C:\\Users\\mario\\OneDrive\\Escritorio\\proyectorepo\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\BibliotecaP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jesus\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\BibliotecaP.csproj": {
+    "C:\\Users\\mario\\OneDrive\\Escritorio\\proyectorepo\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\BibliotecaP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jesus\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\BibliotecaP.csproj",
+        "projectUniqueName": "C:\\Users\\mario\\OneDrive\\Escritorio\\proyectorepo\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\BibliotecaP.csproj",
         "projectName": "BibliotecaP",
-        "projectPath": "C:\\Users\\jesus\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\BibliotecaP.csproj",
-        "packagesPath": "C:\\Users\\jesus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jesus\\ProyectoBiblioteca\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\obj\\",
+        "projectPath": "C:\\Users\\mario\\OneDrive\\Escritorio\\proyectorepo\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\BibliotecaP.csproj",
+        "packagesPath": "C:\\Users\\mario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mario\\OneDrive\\Escritorio\\proyectorepo\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\jesus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

@@ -1,10 +1,10 @@
-﻿using BibliotecaP.Models.dbModels;
-using Microsoft.AspNetCore.SignalR;
-using Microsoft.EntityFrameworkCore;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.SignalR;
+using Microsoft.EntityFrameworkCore;
+using BibliotecaP.Models.dbModels;
 
 namespace BibliotecaP.Services
 {
@@ -78,7 +78,7 @@ namespace BibliotecaP.Services
                 _context.Cubiculos.Update(cubiculo);
                 await _context.SaveChangesAsync();
 
-                // cambio de estado
+                // Notificar a los clientes sobre el cambio de estado
                 var estado = nuevoEstadoId == 1 ? "Disponible" : "Ocupado"; // Ajustar según los estados disponibles
                 await _hubContext.Clients.All.SendAsync("CubiculoEstadoActualizado", cubiculoId, estado);
             }

@@ -43,6 +43,9 @@
         background-color: rgb(255, 94, 0);
     }
 
+
+
+
 h5 {
     margin-right: 12px;
     width: 25px;
@@ -55,11 +58,10 @@ h5 {
     border: solid white;
 }
 
-.mesas.seat.available {
+.seat.custom-seat {
     width: 150px;
-    height: 70px;
-    background-color: white;
-    border: solid 2px black;
+    height: 700px;
+    border: solid 4px black;
 }
 
 .libros.seat.available {
@@ -126,15 +128,16 @@ button.deshacer {
         height: 30px;
     }
 
-    .seat {
+    .seat.seat {
         width: 20px;
         height: 20px;
     }
-
-    .mesas.seat.available {
-        width: 50px;
-        height: 50px;
+    .custom-seat {
+        width: 150px;
+        height: 150px;
     }
+
+    
 
     .libros.seat.available {
         width: 300px;
@@ -165,10 +168,10 @@ button.deshacer {
         height: 50px;
     }
 
-    .mesas.seat.available {
-        width: 150px;
-        height: 100px;
-    }
+        .seat.custom-seat {
+            width: 200px;
+            height: 200px;
+        }
 
     .libros.seat.available {
         width: 300px;
@@ -199,11 +202,10 @@ button.deshacer {
         height: 60px;
     }
 
-    .mesas.seat.available {
-        width: 150px;
-        height: 100px;
-    }
-
+        .seat.custom-seat {
+            width: 150px;
+            height: 150px;
+        }
     .libros.seat.available {
         width: 500px;
         height: 150px;

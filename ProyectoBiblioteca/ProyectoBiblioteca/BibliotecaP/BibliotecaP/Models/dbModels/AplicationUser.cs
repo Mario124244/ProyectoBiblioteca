@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+
 namespace BibliotecaP.Models.dbModels
 {
     public class AplicationUser : IdentityUser<int>
@@ -10,7 +11,9 @@ namespace BibliotecaP.Models.dbModels
         public int UsuarioId { get; set; }
 
         [StringLength(50)]
-
+        [Required]
+        [Column("Nombre")]
+        public string Nombre { get; set; }
 
         [Column("RolID")]
         public int RolId { get; set; }
@@ -26,8 +29,5 @@ namespace BibliotecaP.Models.dbModels
 
         [InverseProperty("Usuario")]
         public virtual ICollection<Reseña> Reseñas { get; set; } = new List<Reseña>();
-
-
-
     }
 }

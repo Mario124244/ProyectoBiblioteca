@@ -3,8 +3,8 @@ using BibliotecaP.Services;
 using Microsoft.AspNetCore.Antiforgery;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.SignalR;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -45,6 +45,9 @@ builder.Services.AddRazorPages();
 
 // Agregar SignalR
 builder.Services.AddSignalR();
+
+// Agregar el servicio en segundo plano
+builder.Services.AddHostedService<CubiculoBackgroundService>();
 
 var app = builder.Build();
 
