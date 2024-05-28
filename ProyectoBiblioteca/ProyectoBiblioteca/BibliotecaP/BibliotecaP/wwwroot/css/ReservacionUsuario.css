@@ -31,9 +31,6 @@
         background-color: #A7F50A;
     }
 
-    .seat.available2 {
-        background-color: white;
-    }
 
     .seat.unavailable {
         background-color: red;

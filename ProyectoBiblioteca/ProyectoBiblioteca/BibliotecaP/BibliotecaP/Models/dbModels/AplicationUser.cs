@@ -10,11 +10,7 @@ namespace BibliotecaP.Models.dbModels
         [Column("UsuarioID")]
         public int UsuarioId { get; set; }
 
-        [StringLength(50)]
-        [Required]
-        [Column("Nombre")]
-        public string Nombre { get; set; }
-
+       
         [Column("RolID")]
         public int RolId { get; set; }
 

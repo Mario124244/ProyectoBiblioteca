@@ -50,6 +50,12 @@ namespace BibliotecaP.Migrations
                     b.Property<DateTimeOffset?>("LockoutEnd")
                         .HasColumnType("datetimeoffset");
 
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)")
+                        .HasColumnName("Nombre");
+
                     b.Property<string>("NormalizedEmail")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
@@ -68,7 +74,6 @@ namespace BibliotecaP.Migrations
                         .HasColumnType("bit");
 
                     b.Property<int>("RolId")
-                        .HasMaxLength(50)
                         .HasColumnType("int")
                         .HasColumnName("RolID");
 

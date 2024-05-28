@@ -5,11 +5,11 @@
     <link rel="stylesheet" type="text/css" href="~/css/ReservacionUsuario.css" />
 }
 @section Scripts {
-    <script src="~/js/UsuarioReserva.js"></script>
+    
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/3.1.18/signalr.min.js"></script>
-   
+    <script src="~/js/UsuarioReserva.js"></script>
 }
 
 
@@ -31,11 +31,11 @@
     </div>
     <div class="row">
         <div class="col-2" style="height: 100px;">
-            <div class=" seat available" data-id="2" style="height: 100px; width: 100px; line-height: 10px; margin-bottom: 5px; text-align: center; border: 1px solid black; border-radius: 5px;">Mesa</div>
-            <div class="seat available" data-id="3" style="height: 100px; width: 100px; line-height: 10px; margin-bottom: 5px; text-align: center; border: 1px solid black; border-radius: 5px;">Mesa</div>
-            <div class=" seat available" data-id="4" style="height: 100px; width: 100px; line-height: 10px; margin-bottom: 5px; text-align: center; border: 1px solid black; border-radius: 5px;">Mesa</div>
-            <div class=" seat available" data-id="5" style="height: 100px; width: 100px; line-height: 10px; margin-bottom: 5px; text-align: center; border: 1px solid black; border-radius: 5px;">Mesa</div>
-            <div class=" seat available" data-id="6" style="height: 100px; width: 100px; line-height: 10px; margin-bottom: 5px; text-align: center; border: 1px solid black; border-radius: 5px;">Mesa</div>
+            <div class=" seat available" data-id="49" style="height: 100px; width: 100px; line-height: 10px; margin-bottom: 5px; text-align: center; border: 1px solid black; border-radius: 5px;">Mesa</div>
+            <div class="seat available" data-id="50" style="height: 100px; width: 100px; line-height: 10px; margin-bottom: 5px; text-align: center; border: 1px solid black; border-radius: 5px;">Mesa</div>
+            <div class=" seat available" data-id="51" style="height: 100px; width: 100px; line-height: 10px; margin-bottom: 5px; text-align: center; border: 1px solid black; border-radius: 5px;">Mesa</div>
+            <div class=" seat available" data-id="52" style="height: 100px; width: 100px; line-height: 10px; margin-bottom: 5px; text-align: center; border: 1px solid black; border-radius: 5px;">Mesa</div>
+            <div class=" seat available" data-id="53" style="height: 100px; width: 100px; line-height: 10px; margin-bottom: 5px; text-align: center; border: 1px solid black; border-radius: 5px;">Mesa</div>
         </div>
         <div class="col-8" style="height: 400px;">
             <div class="row seat-map align-items-center">
@@ -92,11 +92,11 @@
             </div>
         </div>
         <div class="col-2" style="height: 100px;">
-            <div class="seat available" data-id="7" style="height: 100px; width: 100px; line-height: 10px; margin-bottom: 5px; text-align: center; border: 1px solid black; border-radius: 5px;">Mesa</div>
-            <div class="seat available" data-id="8" style="height: 100px; width: 100px; line-height: 10px; margin-bottom: 5px; text-align: center; border: 1px solid black; border-radius: 5px;">Mesa>Mesa</div>
-            <div class="seat available" data-id="9" style="height: 100px; width: 100px; line-height: 10px; margin-bottom: 5px; text-align: center; border: 1px solid black; border-radius: 5px;">Mesa>Mesa</div>
-            <div class="seat available" data-id="10" style="height: 100px; width: 100px; line-height: 10px; margin-bottom: 5px; text-align: center; border: 1px solid black; border-radius: 5px;">Mesa>Mesa</div>
-            <div class="seat available" data-id="11" style="height: 100px; width: 100px; line-height: 10px; margin-bottom: 5px; text-align: center; border: 1px solid black; border-radius: 5px;">Mesa>Mesa</div>
+            <div class="seat available" data-id="54" style="height: 100px; width: 100px; line-height: 10px; margin-bottom: 5px; text-align: center; border: 1px solid black; border-radius: 5px;">Mesa</div>
+            <div class="seat available" data-id="55" style="height: 100px; width: 100px; line-height: 10px; margin-bottom: 5px; text-align: center; border: 1px solid black; border-radius: 5px;">Mesa</div>
+            <div class="seat available" data-id="56" style="height: 100px; width: 100px; line-height: 10px; margin-bottom: 5px; text-align: center; border: 1px solid black; border-radius: 5px;">Mesa</div>
+            <div class="seat available" data-id="57" style="height: 100px; width: 100px; line-height: 10px; margin-bottom: 5px; text-align: center; border: 1px solid black; border-radius: 5px;">Mesa</div>
+            <div class="seat available" data-id="58" style="height: 100px; width: 100px; line-height: 10px; margin-bottom: 5px; text-align: center; border: 1px solid black; border-radius: 5px;">Mesa</div>
         </div>
     </div>
     <div class="row">
@@ -105,7 +105,7 @@
             <button class="reservar btn btn-primary ml-2">Reservar</button>
         </div>
     </div>
-    <div class="modal fade" id="reservationModal" tabindex="-1" role="dialog" aria-labelledby="reservationModalLabel" aria-hidden="true">
+    <div class="modal fade" id="reservationModal" tabindex="-1" role="dialog" aria-labelledby="reservationModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -115,7 +115,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div id="errorMessage" class="alert alert-danger" role="alert" style="display:none;"></div>
+                    <!-- Input fields for time selection -->
                     <form>
                         <div class="form-group">
                             <label for="horaEntrada">Hora de Entrada</label>
@@ -129,7 +129,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary" id="confirmarReserva">Reservar</button>
+                    <button type="button" class="btn btn-primary" id="confirmarReserva">Confirmar</button>
                 </div>
             </div>
         </div>

@@ -3,6 +3,8 @@
     var ultimaReserva = null;
     var userId = 1; // Obtener el userId desde un campo oculto en el HTML, si es necesario
 
+    
+
     // Conectar al hub de SignalR
     const connection = new signalR.HubConnectionBuilder()
         .withUrl("/cubiculoHub")
@@ -134,7 +136,7 @@
     cargarCubiculos();
     cargarMesas();
 
-    $('.reservar-cubiculo').on('click', function () {
+    $('.reservar').on('click', function () {   
         if (selectedSeat) {
             $('#reservationModal').modal('show');
         } else {
@@ -142,15 +144,9 @@
         }
     });
 
-    $('.reservar-mesa').on('click', function () {
-        if (selectedSeat) {
-            $('#reservationMesaModal').modal('show');
-        } else {
-            alert('Por favor, seleccione una mesa primero.');
-        }
-    });
+   
 
-    $('#confirmarReservaCubiculo').on('click', async function () {
+    $('#confirmarReserva').on('click', async function () {
         var horaEntrada = $('#horaEntrada').val();
         var horaSalida = $('#horaSalida').val();
         var cubiculoId = $(selectedSeat).data("id");

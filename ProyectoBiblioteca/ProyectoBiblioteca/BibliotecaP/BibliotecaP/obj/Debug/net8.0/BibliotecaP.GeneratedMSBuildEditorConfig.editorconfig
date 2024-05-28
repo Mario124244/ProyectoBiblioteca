@@ -242,12 +242,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/mario/OneDrive/Escritorio/proyectorepo/ProyectoBiblioteca/ProyectoBiblioteca/BibliotecaP/BibliotecaP/Views/Usuario/EditarUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xFZGl0YXJVc3VhcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/mario/OneDrive/Escritorio/proyectorepo/ProyectoBiblioteca/ProyectoBiblioteca/BibliotecaP/BibliotecaP/Views/Usuario/HistorialReservas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xIaXN0b3JpYWxSZXNlcnZhcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mario/OneDrive/Escritorio/proyectorepo/ProyectoBiblioteca/ProyectoBiblioteca/BibliotecaP/BibliotecaP/Views/Usuario/IndexUsuario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xJbmRleFVzdWFyaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mario/OneDrive/Escritorio/proyectorepo/ProyectoBiblioteca/ProyectoBiblioteca/BibliotecaP/BibliotecaP/Views/Usuario/Informacion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xJbmZvcm1hY2lvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mario/OneDrive/Escritorio/proyectorepo/ProyectoBiblioteca/ProyectoBiblioteca/BibliotecaP/BibliotecaP/Views/Usuario/Reservainfo.cshtml]

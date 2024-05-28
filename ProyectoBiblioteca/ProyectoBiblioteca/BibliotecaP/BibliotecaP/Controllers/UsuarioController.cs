@@ -36,34 +36,34 @@ namespace BibliotecaP.Controllers
 
         [HttpGet]
         [HttpGet]
-public async Task<IActionResult> ReservaInfo(int reservaId)
-{
-    var reservacionCubiculo = await _context.ReservacionCubiculos
-        .Include(r => r.Cubiculo)
-        .Include(r => r.Usuario)
-        .FirstOrDefaultAsync(m => m.ReservacionId == reservaId);
+        public async Task<IActionResult> ReservaInfo(int reservaId)
+        {
+            var reservacionCubiculo = await _context.ReservacionCubiculos
+                .Include(r => r.Cubiculo)
+                .Include(r => r.Usuario)
+                .FirstOrDefaultAsync(m => m.ReservacionId == reservaId);
 
-    if (reservacionCubiculo == null)
-    {
-        return NotFound();
-    }
+            if (reservacionCubiculo == null)
+            {
+                return NotFound();
+            }
 
-    var accesoQrBytes = QrCodeGenerator.GenerateQrCode($"Acceso: {reservacionCubiculo.ReservacionId}");
-    var salidaQrBytes = QrCodeGenerator.GenerateQrCode($"Salida: {reservacionCubiculo.ReservacionId}");
+            var accesoQrBytes = QrCodeGenerator.GenerateQrCode($"Acceso: {reservacionCubiculo.ReservacionId}");
+            var salidaQrBytes = QrCodeGenerator.GenerateQrCode($"Salida: {reservacionCubiculo.ReservacionId}");
 
-    reservacionCubiculo.AccesoQrBase64 = Convert.ToBase64String(accesoQrBytes);
-    reservacionCubiculo.SalidaQrBase64 = Convert.ToBase64String(salidaQrBytes);
+            reservacionCubiculo.AccesoQrBase64 = Convert.ToBase64String(accesoQrBytes);
+            reservacionCubiculo.SalidaQrBase64 = Convert.ToBase64String(salidaQrBytes);
 
-    _context.Update(reservacionCubiculo);
-    await _context.SaveChangesAsync();
+            _context.Update(reservacionCubiculo);
+            await _context.SaveChangesAsync();
 
-    ViewBag.AccesoQrBase64 = reservacionCubiculo.AccesoQrBase64;
-    ViewBag.SalidaQrBase64 = reservacionCubiculo.SalidaQrBase64;
+            ViewBag.AccesoQrBase64 = reservacionCubiculo.AccesoQrBase64;
+            ViewBag.SalidaQrBase64 = reservacionCubiculo.SalidaQrBase64;
 
-    return View(reservacionCubiculo);
-}
+            return View(reservacionCubiculo);
+        }
 
-  public async Task<IActionResult> HistorialReservas()
+        public async Task<IActionResult> HistorialReservas()
         {
             var userId = 1; // Reemplaza esto con la lógica para obtener el ID del usuario autenticado
             var usuario = await _context.Users
@@ -94,7 +94,7 @@ public async Task<IActionResult> ReservaInfo(int reservaId)
 
             return View(reservas);
         }
- int Id { get; set; }
+        int Id { get; set; }
         public string Nombre { get; set; }
         public string HoraEntrada { get; set; }
         public string HoraSalida { get; set; }

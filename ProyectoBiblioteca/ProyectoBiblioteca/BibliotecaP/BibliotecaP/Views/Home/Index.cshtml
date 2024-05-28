@@ -1,9 +1,123 @@
-﻿@{
+﻿@model IEnumerable<BibliotecaP.Models.DTOs.ReseñaDTO>
+@{
     ViewData["Title"] = "INICIO";
 }
 @section Styles {
-    <link rel="stylesheet" type="text/css" href="~/css/IndexNoRegistrado.css" />
+    <style>
+
+        .no-padding {
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        .no-gutters {
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+            .no-gutters > .col-6 {
+                padding-right: 0;
+                padding-left: 0;
+            }
+
+        .container-fluid {
+            width: 100% !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        .img-fluid {
+            width: 100%;
+            height: auto;
+        }
+
+        .content {
+            padding-left: 40px;
+            padding-bottom: 0px;
+        }
+
+        h1 {
+            font-size: 200px;
+        }
+
+        .titulo {
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        .scroll-container {
+            max-height: 300px;
+            overflow-y: scroll;
+            padding: 20px;
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+
+            .scroll-container p {
+                font-family: 'Arial', sans-serif;
+                line-height: 1.6;
+                color: #333;
+            }
+
+            .scroll-container strong {
+                color: #4CAF50;
+            }
+
+
+            .scroll-container::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            .scroll-container::-webkit-scrollbar-thumb {
+                background-color: #4CAF50;
+                border-radius: 10px;
+            }
+
+            .scroll-container::-webkit-scrollbar-track {
+                background-color: #e0e0e0;
+                border-radius: 10px;
+            }
+
+        .img1 {
+            width: 150px;
+            height: 150px;
+        }
+
+        .rating {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+        }
+
+            .rating input {
+                display: none;
+            }
+
+            .rating label {
+                font-size: 2em;
+                color: #ccc;
+                cursor: pointer;
+                margin: 0 5px;
+            }
+
+            .rating input:checked ~ label {
+                color: #ff9933;
+            }
+
+            .rating input:not(:checked) ~ label:hover,
+            .rating input:not(:checked) ~ label:hover ~ label {
+                color: #ff9933;
+            }
+    </style>
 }
+
 <div class="container-fluid no-padding">
     <div class="row no-gutters">
         <div class="col-6 no-padding">
@@ -30,23 +144,67 @@
                     </p>
 
                 </div>
-                <div class="col-12     juestify-content resenasimg">
-                    <img src="~/img/resenas.png" alt="Alternate Text" class="img1" />
-                    <div class="rating ">
-                        <input type="radio" name="clr1" style="--c:#ff9933" />
-                        <input type="radio" name="clr1" style="--c:#ff9933" />
-                        <input type="radio" name="clr1" style="--c:#ff9933" />
-                        <input type="radio" name="clr1" style="--c:#ff9933" />
-                        <input type="radio" name="clr1" style="--c:#ff9933" />
+
+                <div id="reviewsCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+                    <div class="carousel-inner">
+                        @for (int i = 0; i < Model.Count(); i++)
+                        {
+                            <div class="carousel-item @(i == 0 ? "active" : "")">
+                                <div class="d-flex flex-column align-items-center">
+                                    <img src="~/img/resenas.png" alt="Alternate Text" class="img1" />
+                                    <p>@Model.ElementAt(i).Descripcion</p>
+                                    <div class="rating">
+                                        @for (int j = 5; j >= 1; j--)
+                                        {
+                                            <input type="radio" name="clr@i" id="star-@i-@j" style="--c:#ff9933" @(j == Model.ElementAt(i).Calificacion ? "checked" : "") disabled />
+                                            <label for="star-@i-@j">&#9733;</label>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        }
                     </div>
-
-
+                    <a class="carousel-control-prev" href="#reviewsCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#reviewsCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
 
-                
+                @if (Convert.ToBoolean(ViewData["IsAuthenticated"]))
+                {
+                    <div class="col-12 justify-content resenasimg mt-3">
+                        <form method="post" action="@Url.Action("AddReview", "Home")" class="mt-3">
+                            <textarea name="descripcion" required placeholder="Escribe tu reseña aquí..." class="form-control mb-2"></textarea>
+                            <div class="rating mb-2">
+                                @for (int j = 5; j >= 1; j--)
+                                {
+                                    <input type="radio" name="calificacion" id="star-@j" value="@j" style="--c:#ff9933" />
+                                    <label for="star-@j">&#9733;</label>
+                                }
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar Reseña</button>
+                        </form>
+                    </div>
+                }
 
                 
         
     </div>
 </div>
 
+        @section Scripts {
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $('.carousel').carousel({
+                        interval: 5000
+                    });
+                });
+            </script>
+        }
