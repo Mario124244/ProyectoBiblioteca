@@ -3,14 +3,16 @@
 }
 
 .seat-map {
-    display: flexbox;
+    display: flex;
+    flex-wrap: wrap;
     margin: 20px;
     justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(auto-fill, minmax(20px, 1fr));
-    
-    grid-auto-flow: column dense;
     gap: 5px;
+}
+
+.btn {
+    padding: 0;
 }
 
 .seat {
@@ -29,9 +31,6 @@
         background-color: #A7F50A;
     }
 
-    .seat.available2 {
-        background-color: white;
-    }
 
     .seat.unavailable {
         background-color: red;
@@ -40,6 +39,9 @@
     .seat.selected {
         background-color: rgb(255, 94, 0);
     }
+
+
+
 
 h5 {
     margin-right: 12px;
@@ -53,14 +55,10 @@ h5 {
     border: solid white;
 }
 
-.mesas.seat.available {
+.seat.custom-seat {
     width: 150px;
-    height: 70px;
-}
-
-.mesas.seat.available {
-    background-color: white;
-    border: solid 2px black;
+    height: 700px;
+    border: solid 4px black;
 }
 
 .libros.seat.available {
@@ -79,17 +77,147 @@ h5 {
     .botoninterfaz.btn i {
         color: white;
     }
-    button.habilitar{
-    background-color: green;
-    
+
+
+button.reservar, button.deshacer {
+    color: white; /* Color del texto */
+    border: none; /* Eliminar borde */
+    border-radius: 5px; /* Borde redondeado */
+    font-size: 16px; /* Tamaño del texto */
+    cursor: pointer; /* Cursor de puntero */
+    margin: 5px; /* Espaciado entre botones */
 }
 
-button.desabilitar {
+button.reservar {
+    background-color: green;
+    width: 100px;
+    height: 40px; /* Ajustar altura */
+}
+
+button.deshacer {
+    background-color: red;
+    width: 100px;
+    height: 40px; /* Ajustar altura */
+}
+
+.occupied {
+    background-color: red;
+    cursor: not-allowed;
+}
+
+.maintenance {
+    background-color: yellow;
+    cursor: not-allowed;
+}
+
+.selected {
+    border: 2px solid blue;
+}
+
+.reserved {
     background-color: red;
 }
-col-12{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction:column;
+
+/* Estilos para pantallas pequeñas (teléfonos) */
+@media (max-width: 768px) {
+    .botoninterfaz {
+        width: 30px;
+        height: 30px;
+    }
+
+    .seat.seat {
+        width: 20px;
+        height: 20px;
+    }
+
+    .custom-seat {
+        width: 150px;
+        height: 150px;
+    }
+
+
+
+    .libros.seat.available {
+        width: 300px;
+        height: 100px;
+    }
+
+    button.reservar, button.deshacer {
+        width: 80px;
+        height: 25px;
+        text-align: center;
+    }
+
+    .seat-map {
+        gap: 3px;
+        margin: 10px;
+    }
+}
+
+/* Estilos para pantallas medianas (tabletas) */
+@media (min-width: 769px) and (max-width: 1996px) {
+    .botoninterfaz {
+        width: 30px;
+        height: 30px;
+    }
+
+    .seat {
+        width: 50px;
+        height: 50px;
+    }
+
+        .seat.custom-seat {
+            width: 200px;
+            height: 200px;
+        }
+
+    .libros.seat.available {
+        width: 300px;
+        height: 100px;
+    }
+
+    button.reservar, button.deshacer {
+        width: 80px;
+        height: 25px;
+        text-align: center;
+    }
+
+    .seat-map {
+        gap: 3px;
+        margin: 10px;
+    }
+}
+
+/* Estilos para pantallas grandes (escritorios) */
+@media (min-width: 1997px) {
+    .botoninterfaz {
+        width: 40px;
+        height: 40px;
+    }
+
+    .seat {
+        width: 60px;
+        height: 60px;
+    }
+
+        .seat.custom-seat {
+            width: 150px;
+            height: 150px;
+        }
+
+    .libros.seat.available {
+        width: 500px;
+        height: 150px;
+    }
+
+    button.reservar, button.deshacer {
+        width: 100px;
+        height: 30px;
+        text-align: center;
+    }
+
+    .seat-map {
+        gap: 5px;
+        margin: 20px;
+    }
 }

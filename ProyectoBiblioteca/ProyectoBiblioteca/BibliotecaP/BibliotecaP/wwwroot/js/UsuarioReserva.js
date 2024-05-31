@@ -48,6 +48,28 @@
         return $('input[name="__RequestVerificationToken"]').val();
     }
 
+    function actualizarEstadoCubiculo(cubiculoId, estado) {
+        const token = getAntiForgeryToken();
+        $.ajax({
+            url: `https://localhost:7230/api/reservations/cubiculos/${cubiculoId}/estado`,
+            type: 'PUT',
+            contentType: 'application/json',
+            headers: {
+                'RequestVerificationToken': token
+            },
+            data: JSON.stringify({ estado: estado }),
+            success: function () {
+                connection.invoke("CubiculoEstadoActualizado", cubiculoId, estado).catch(function (err) {
+                    return console.error(err.toString());
+                });
+            },
+            error: function (xhr, status, error) {
+                console.error('Error al actualizar el estado del cubículo:', error, xhr.responseText);
+                alert('Error al actualizar el estado del cubículo');
+            }
+        });
+    }
+
     function cargarCubiculos() {
         $.get("https://localhost:7230/api/reservations/cubiculos", function (response) {
             var cubiculos = response.$values || response;
@@ -61,7 +83,7 @@
                             seat.addClass('available');
                             break;
                         case 'Ocupado':
-                            seat.addClass('unavailable');
+                            seat.addClass('occupied');
                             break;
                         case 'Mantenimiento':
                             seat.addClass('maintenance');
@@ -95,7 +117,7 @@
                             table.addClass('available');
                             break;
                         case 'Ocupado':
-                            table.addClass('unavailable');
+                            table.addClass('occupied');
                             break;
                         case 'Mantenimiento':
                             table.addClass('maintenance');
@@ -140,6 +162,24 @@
             $('#reservationModal').modal('show');
         } else {
             alert('Por favor, seleccione un cubículo primero.');
+        }
+    });
+
+    $('#habilitarCubiculo').on('click', function () {
+        if (selectedSeat) {
+            const cubiculoId = $(selectedSeat).data('id');
+            actualizarEstadoCubiculo(cubiculoId, 'Disponible');
+        } else {
+            alert('Seleccione un cubículo primero');
+        }
+    });
+
+    $('#deshabilitarCubiculo').on('click', function () {
+        if (selectedSeat) {
+            const cubiculoId = $(selectedSeat).data('id');
+            actualizarEstadoCubiculo(cubiculoId, 'Mantenimiento');
+        } else {
+            alert('Seleccione un cubículo primero');
         }
     });
 
@@ -297,11 +337,11 @@
                         window.location.href = `/Usuario/ReservaInfo?reservaId=${reservaId}`;
                     }
                 } catch (error) {
-                    $('#errorMessage').text(`Ocurrió un error al intentar realizar la reserva: ${error.message}`).show();
+                    $('#errorMessageMesa').text(`Ocurrió un error al intentar realizar la reserva: ${error.message}`).show();
                 }
             }
         } else {
-            $('#errorMessage').text('Por favor, complete todos los campos.').show();
+            $('#errorMessageMesa').text('Por favor, complete todos los campos.').show();
         }
     });
 

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YZe8lp+kb+h/BKd6wEqw/x+SbyEj6nDi3fW8Q3aHjTE=",
+  "Hash": "M8VNEfs43F6z5tQodntRjCEiAfiktH8q9fPTjXxsdzM=",
   "Source": "BibliotecaP",
   "BasePath": "_content/BibliotecaP",
   "Mode": "Default",
@@ -1459,6 +1459,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\UANL-Logo.png"
+    },
+    {
+      "Identity": "C:\\Users\\mario\\OneDrive\\Escritorio\\proyectorepo\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\js\\Admin.js",
+      "SourceId": "BibliotecaP",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\mario\\OneDrive\\Escritorio\\proyectorepo\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\",
+      "BasePath": "_content/BibliotecaP",
+      "RelativePath": "js/Admin.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Admin.js"
     },
     {
       "Identity": "C:\\Users\\mario\\OneDrive\\Escritorio\\proyectorepo\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\js\\site.js",

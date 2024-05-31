@@ -61,6 +61,10 @@
       "PackagePath": "staticwebassets\\img\\resenas.png"
     },
     {
+      "Id": "C:\\Users\\mario\\OneDrive\\Escritorio\\proyectorepo\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\js\\Admin.js",
+      "PackagePath": "staticwebassets\\js\\Admin.js"
+    },
+    {
       "Id": "C:\\Users\\mario\\OneDrive\\Escritorio\\proyectorepo\\ProyectoBiblioteca\\ProyectoBiblioteca\\BibliotecaP\\BibliotecaP\\wwwroot\\js\\UsuarioReserva.js",
       "PackagePath": "staticwebassets\\js\\UsuarioReserva.js"
     },

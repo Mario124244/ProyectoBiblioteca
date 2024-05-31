@@ -19,6 +19,7 @@ namespace BibliotecaP.Services
             _context = context;
             _hubContext = hubContext;
         }
+
         public async Task<IEnumerable<ReservacionCubiculo>> GetUserReservations(int userId)
         {
             return await _context.ReservacionCubiculos
@@ -26,7 +27,6 @@ namespace BibliotecaP.Services
                 .OrderByDescending(r => r.FechaHoraInicio)
                 .ToListAsync();
         }
-
 
         public async Task<int> CreateCubiculoReservation(int userId, int cubiculoId, DateTime startDate, DateTime endDate)
         {
@@ -126,6 +126,74 @@ namespace BibliotecaP.Services
                 .Include(r => r.Mesa)
                 .Where(r => r.UsuarioId == userId)
                 .ToListAsync();
+        }
+
+        public async Task<bool> UpdateCubiculoEstado(int cubiculoId, string estado)
+        {
+            var cubiculo = await _context.Cubiculos.FindAsync(cubiculoId);
+            if (cubiculo == null)
+            {
+                return false;
+            }
+
+            int estadoId;
+            switch (estado)
+            {
+                case "Disponible":
+                    estadoId = 1;
+                    break;
+                case "Ocupado":
+                    estadoId = 2;
+                    break;
+                case "Mantenimiento":
+                    estadoId = 3;
+                    break;
+                default:
+                    return false; // Estado no válido
+            }
+
+            cubiculo.EstadoId = estadoId;
+            _context.Cubiculos.Update(cubiculo);
+            await _context.SaveChangesAsync();
+
+            // Notificar a los clientes sobre el cambio de estado
+            await _hubContext.Clients.All.SendAsync("CubiculoEstadoActualizado", cubiculoId, estado);
+
+            return true;
+        }
+
+        public async Task<bool> UpdateMesaEstado(int mesaId, string estado)
+        {
+            var mesa = await _context.Mesas.FindAsync(mesaId);
+            if (mesa == null)
+            {
+                return false;
+            }
+
+            int estadoId;
+            switch (estado)
+            {
+                case "Disponible":
+                    estadoId = 1;
+                    break;
+                case "Ocupado":
+                    estadoId = 2;
+                    break;
+                case "Mantenimiento":
+                    estadoId = 3;
+                    break;
+                default:
+                    return false; // Estado no válido
+            }
+
+            mesa.EstadoId = estadoId;
+            _context.Mesas.Update(mesa);
+            await _context.SaveChangesAsync();
+
+            // Notificar a los clientes sobre el cambio de estado
+            await _hubContext.Clients.All.SendAsync("MesaEstadoActualizado", mesaId, estado);
+
+            return true;
         }
 
         private async Task CambiarEstadoCubiculo(int cubiculoId, int nuevoEstadoId)

@@ -1,9 +1,7 @@
 ﻿using BibliotecaP.Models.DTO.Cubiculo;
 using BibliotecaP.Models.DTO.Mesa;
 using BibliotecaP.Services;
-using iTextSharp.text.pdf.codec.wmf;
 using Microsoft.AspNetCore.Mvc;
-
 
 [ApiController]
 [Route("api/[controller]")]
@@ -106,6 +104,30 @@ public class ReservationsController : ControllerBase
         var reservations = await _reservationService.GetUserMesaReservations(userId);
         return Ok(reservations);
     }
+
+    [HttpPut("cubiculos/{cubiculoId}/estado")]
+    public async Task<IActionResult> UpdateCubiculoEstado(int cubiculoId, [FromBody] EstadoRequest request)
+    {
+        if (request == null)
+        {
+            return BadRequest("Invalid request payload.");
+        }
+
+        var result = await _reservationService.UpdateCubiculoEstado(cubiculoId, request.Estado);
+
+        if (!result)
+        {
+            return NotFound();
+        }
+
+        return NoContent();
+    }
+}
+
+// Clase para representar la solicitud de actualización de estado
+public class EstadoRequest
+{
+    public string Estado { get; set; }
 }
 
 public class ReservationRequest
