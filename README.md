@@ -1,5 +1,6 @@
 # ProyectoBiblioteca
-Sengunda version de proyecto Biblioteca
+Sengunda version de proyecto Biblioteca, En esta version se busca implementar un sistema de reservaciones mas sofisticado en el cual se utilizan herramientas con las cuales logramos inplementar la funcion de actualizar estados de los cubiculos visibles para usuarios y administradores los administradores tienen la posibilidad de administrar estos cubiculos.
+Por ejemplo si quisieran poner algun cubiculo en mantenimiento, desde la interfaz de administrador pueden lograrlo.
 Vista previa
 Login:
 ![image](https://github.com/Mario124244/ProyectoBiblioteca/assets/160434078/734737ed-2076-4baf-bc61-4201e62a04d3)
